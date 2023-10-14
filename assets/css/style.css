@@ -10,11 +10,33 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-  header {
-    background-color: bisque;
+  /* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 4px 20px #2d1212;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
+
+  header a {
+    /* Logo underline removed */
+    text-decoration: none;
+    color: inherit;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+  }
+
   main {
     background-color: rgb(179, 196, 49);
     /* Pushing footer down */
