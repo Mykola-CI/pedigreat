@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: #3a3a3a;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,6 +39,9 @@ nav {
   right: 8%;
   padding-top: 1rem;
   line-height: 150%;
+  border: 2px solid green;
+  backdrop-filter: blur(10px);
+  background: transparent;
 }
 
 .nav-menu {
@@ -50,8 +54,25 @@ nav {
   margin-bottom: 1em;
 }
 
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+/* Add hidden items: section headings and checkbox */
+.hidden-heading {
+  display: none;
+}
+#nav-toggle {
+  display: none;
+}
+
+/* Adding Glassmorphism to Menu block */
+
+
+/* Main content */
 main {
   background-color: rgb(179, 196, 49);
+  margin-top: 85px;
   /* Pushing footer down */
   flex: 1 0 auto;
 }
