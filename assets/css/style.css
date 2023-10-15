@@ -28,7 +28,7 @@ header {
 }
 
 header a {
-  /* Logo underline removed */
+  /* Underline removed to all 'a' children of the header*/
   text-decoration: none;
   color: inherit;
 }
@@ -40,8 +40,11 @@ nav {
   padding-top: 1rem;
   line-height: 150%;
   border: 2px solid green;
+  /* Adding glass morphism */
   backdrop-filter: blur(10px);
   background: transparent;
+  /* makes entire list hidden until the burger toggled */
+  display: none;
 }
 
 .nav-menu {
@@ -66,7 +69,9 @@ nav {
   display: none;
 }
 
-/* Adding Glassmorphism to Menu block */
+#nav-toggle:checked ~ nav {
+  display: block;
+}
 
 
 /* Main content */
