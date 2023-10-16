@@ -48,7 +48,7 @@ nav {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 2s ease-out, max-height 2s ease-out;
+  transition: opacity 1s ease-out, max-height 1s ease-out;
 }
 
 .nav-menu {
