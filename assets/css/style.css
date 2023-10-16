@@ -116,6 +116,9 @@ to control image filters w/o affecting the headings */
 .banner-text {
   position: relative;
   top: 30%;
+  display: inline-block;
+  max-width: 70ch;
+
 }
 
 
