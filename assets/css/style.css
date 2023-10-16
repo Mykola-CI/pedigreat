@@ -44,7 +44,11 @@ nav {
   backdrop-filter: blur(10px);
   background: transparent;
   /* makes entire list hidden until the burger toggled */
-  display: none;
+  /* opacity-height applied instead of display none  */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 2s ease-out, max-height 2s ease-out;
 }
 
 .nav-menu {
@@ -65,12 +69,16 @@ nav {
 .hidden-heading {
   display: none;
 }
+
 #nav-toggle {
   display: none;
 }
 
+/* Provide checkbox toggle between visible non-visible */
 #nav-toggle:checked ~ nav {
-  display: block;
+  /* max-height used with px instead of auto to avoid browser issues w/t calculation */
+  opacity: 1;
+  max-height: 300px; 
 }
 
 
