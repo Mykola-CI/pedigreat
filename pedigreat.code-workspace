@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../playgroundci/Code-alone-projects/love-running"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pedigreat"
+	}
+}

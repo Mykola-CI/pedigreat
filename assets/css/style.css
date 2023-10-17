@@ -21,6 +21,7 @@ h1,
 h2,
 h3 {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   /* letter-spacing: 2px; */
   color: #252525;
 }
@@ -145,7 +146,7 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .banner-text h2 {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 250%;
   padding: 0 1rem;
 }
