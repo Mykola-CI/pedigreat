@@ -76,7 +76,7 @@ nav {
   margin-bottom: 1em;
 } */
 
-.nav-toggle-label {
+.nav-toggle--label {
   font-size: 2rem;
   padding-right: 0.5em;
 }
@@ -135,7 +135,7 @@ to control image filters w/o affecting the headings and paragraphs */
   filter: blur(0.5px) opacity(50%) hue-rotate(80deg);
 }
 
-.banner-text {
+.banner-landing--text {
   position: relative;
   top: 30%;
   /* Setting to inline-block allows to control horizontal position
@@ -145,13 +145,13 @@ to control image filters w/o affecting the headings and paragraphs */
 
 }
 
-.banner-text h2 {
+.banner-landing--text h2 {
   /* font-weight: 400; */
   font-size: 250%;
   padding: 0 1rem;
 }
 
-.banner-text p {
+.banner-landing--text p {
   font-size: large;
   padding: 1rem;
 }
