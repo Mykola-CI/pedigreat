@@ -36,8 +36,11 @@ header a {
 nav {
   position: absolute;
   top: 85px;
-  right: 3%;
-  padding: 1rem 2rem;
+  left: 0;
+  right: 0;
+  width: 96%;
+  margin: auto;
+  padding: 1rem 4rem;
   line-height: 200%;
   border: 1px solid rgba(255, 255, 255, 0.25);
   /* Adding glass morphism */
@@ -48,7 +51,7 @@ nav {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 1s ease-out, max-height 1s ease-out;
+  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
 }
 
 .nav-menu {
@@ -83,9 +86,9 @@ nav {
 }
 
 /* Set focus for menu item on hover */
-.nav-menu li:hover {
+/* .nav-menu li:hover {
   background-color: #f1c40f;
-}
+} */
 
 /* Main content */
 main {
@@ -117,7 +120,7 @@ to control image filters w/o affecting the headings */
   width: 100%;
   height: 100%;
   z-index: -1;
-  filter: blur(1px) opacity(50%) hue-rotate(50deg);
+  filter: blur(0.5px) opacity(70%) hue-rotate(80deg);
 }
 
 .banner-text {
