@@ -156,6 +156,14 @@ to control image filters w/o affecting the headings and paragraphs */
   padding: 1rem;
 }
 
+/* About Us section on the landing page */
+
+.about-us--image img,
+.testimonials--image1 img,
+.testimonials--image2 img {
+  width: 100%;
+  height: auto;
+}
 
 footer {
   background-color: blue;
