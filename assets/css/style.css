@@ -5,13 +5,24 @@
   box-sizing: border-box;
 }
 
+/* import of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento&display=swap');
+
 /* General body styles */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quattrocento', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  /* letter-spacing: 2px; */
+  color: #252525;
 }
 
 /* Header */
@@ -40,8 +51,8 @@ nav {
   right: 0;
   width: 96%;
   margin: auto;
-  padding: 1rem 4rem;
-  line-height: 200%;
+  padding: 0.7rem 4rem;
+  line-height: 180%;
   border: 1px solid rgba(255, 255, 255, 0.25);
   /* Adding glass morphism */
   backdrop-filter: blur(10px);
@@ -110,7 +121,7 @@ main {
 }
 
 /* Setting a banner as a background image of pseudo-element 
-to control image filters w/o affecting the headings */
+to control image filters w/o affecting the headings and paragraphs */
 .banner-landing::before {
   content: "";
   background: url("../images/group-of-dog-sitters-walking-a-pack-of-dogs-on-leashes.jpeg") no-repeat center center/cover;
@@ -131,6 +142,16 @@ to control image filters w/o affecting the headings */
   display: inline-block;
   max-width: 70ch;
 
+}
+
+.banner-text h2 {
+  font-weight: 400;
+  font-size: 250%;
+}
+
+.banner-text p {
+  font-size: large;
+  padding: 1rem;
 }
 
 
