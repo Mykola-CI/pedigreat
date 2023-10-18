@@ -1,11 +1,43 @@
 /* import of fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento&display=swap');
 
+/* Color Theme Swatches in Hex
+.Postane-1-hex { color: #3F4773; }
+.Postane-2-hex { color: #F2E205; }
+.Postane-3-hex { color: #F2CB05; }
+.Postane-4-hex { color: #F2B807; }
+.Postane-5-hex { color: #A68932; }
+
+Color Theme Swatches in RGBA
+.Postane-1-rgba { color: rgba(63, 70, 114, 1); }
+.Postane-2-rgba { color: rgba(242, 226, 4, 1); }
+.Postane-3-rgba { color: rgba(242, 202, 4, 1); }
+.Postane-4-rgba { color: rgba(242, 183, 7, 1); }
+.Postane-5-rgba { color: rgba(165, 136, 49, 1); }
+
+Color Theme Swatches in HSLA
+.Postane-1-hsla { color: hsla(230, 29, 34, 1); }
+.Postane-2-hsla { color: hsla(56, 96, 48, 1); }
+.Postane-3-hsla { color: hsla(50, 96, 48, 1); }
+.Postane-4-hsla { color: hsla(45, 94, 48, 1); }
+.Postane-5-hsla { color: hsla(44, 53, 42, 1); } */
+
+
+
 /* Global declarations in wildcard */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* CUSTOM COLOR VARIABLES */
+:root {
+  --COLOR-1: #3F4773;
+  --COLOR-2: #F2E205;
+  --COLOR-3: #F2CB05;
+  --COLOR-4: #F2B807;
+  --COLOR-5: #453914; 
 }
 
 /* General body styles */
@@ -14,7 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Quattrocento', serif;
-  color: #5c064f;
+  color: var(--COLOR-5);
 }
 
 h1,
@@ -24,7 +56,7 @@ h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #970c82;
+  color: var(--COLOR-1);
 }
 
 p {
@@ -33,12 +65,12 @@ p {
 
 /* HEADER */
 header {
-  background-color: #f1c40f;
+  background-color: var(--COLOR-3);
   padding: 1.5rem 1rem;
   position: fixed;
   z-index: 20;
   width: 100%;
-  box-shadow: 0 10px 20px #2d1212;
+  box-shadow: 0 10px 20px var(--COLOR-1);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -102,12 +134,12 @@ nav {
   transform: rotate(90deg)
 }
 
-/* MAIN CONTENT */
+/* MAIN CONTENT Mobile Format*/
 main {
   margin-top: 85px;
   /* Pushing footer down */
   flex: 1 0 auto;
-  background-color: #f1c40f22;
+  background-color: #f2e2051f;
 }
 
 /* Banner section on the landing page */
@@ -136,7 +168,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 100%;
   height: 100%;
   z-index: -1;
-  filter: blur(0.5px) opacity(50%) hue-rotate(80deg);
+  filter: blur(0) opacity(80%);
 }
 
 /* Flex applied to align child elements of .banner-landing--text */
@@ -144,6 +176,9 @@ to control image filters w/o affecting the headings and paragraphs */
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 45%;
+  backdrop-filter: blur(10px);
+  background: transparent;
 }
 
 /* Setting a responsive font-size to banner text */
@@ -180,9 +215,21 @@ to control image filters w/o affecting the headings and paragraphs */
   height: auto;
 }
 
+.about-us h3 {
+font-size: clamp(1.5rem, 4vw, 2.5rem)
+}
+.about-us h4 {
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+.about-us p {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+}
+
+/* Establishing the about-us grid for mobiles  */
 .about-us {
   display: grid;
-  
+  gap: 1rem;
+  padding: 2rem;
 }
 
 
