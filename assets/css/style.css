@@ -48,7 +48,7 @@ header a {
 
 nav {
   position: absolute;
-  top: 85px;
+  top: 73px;
   left: 0;
   right: 0;
   width: 96%;
@@ -57,7 +57,7 @@ nav {
   line-height: 200%;
   border: 1px solid rgba(255, 255, 255, 0.25);
   /* Adding glass morphism */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   background: transparent;
   /* makes entire list hidden until the burger toggled */
   /* opacity-height applied instead of display none  */
@@ -96,6 +96,9 @@ nav {
   /* max-height used with px instead of auto to avoid browser issues w/t calculation */
   opacity: 1;
   max-height: 300px;
+}
+#nav-toggle:checked~.nav-toggle--label {
+  transform:rotate(90deg)
 }
 
 /* Set focus for menu item on hover */
