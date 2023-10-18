@@ -13,17 +13,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #3a3a3a;
+  color: #5c064f;
   font-family: 'Quattrocento', serif;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   /* letter-spacing: 2px; */
-  color: #252525;
+  color: #970c82;
 }
 
 /* Header */
@@ -141,19 +142,20 @@ to control image filters w/o affecting the headings and paragraphs */
   /* Setting to inline-block allows to control horizontal position
   in combination with text-align in the parent */
   display: inline-block;
-  max-width: 70ch;
-
+  /* Constrain title block width */
+  max-width: 85ch
 }
 
+/* Setting a responsive font-size to banner text */
 .banner-landing--text h2 {
   /* font-weight: 400; */
-  font-size: 250%;
-  padding: 0 1rem;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  padding: 1rem 1rem;
 }
 
 .banner-landing--text p {
-  font-size: large;
-  padding: 1rem;
+  font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+  padding: 0 1rem;
 }
 
 /* About Us section on the landing page */
