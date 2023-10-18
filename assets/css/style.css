@@ -180,6 +180,12 @@ to control image filters w/o affecting the headings and paragraphs */
   height: auto;
 }
 
+.about-us {
+  display: grid;
+  
+}
+
+
 footer {
   background-color: blue;
 }
