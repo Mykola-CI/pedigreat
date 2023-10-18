@@ -27,7 +27,11 @@ h4 {
   color: #970c82;
 }
 
-/* Header */
+p {
+  line-height: 130%;
+}
+
+/* HEADER */
 header {
   background-color: #f1c40f;
   padding: 1.5rem 1rem;
@@ -73,10 +77,6 @@ nav {
   list-style: none;
 }
 
-/* .nav-menu>li {
-  margin-bottom: 1em;
-} */
-
 .nav-toggle--label {
   font-size: 2rem;
   padding-right: 0.5em;
@@ -97,14 +97,10 @@ nav {
   opacity: 1;
   max-height: 300px;
 }
+/* Burger icon will rotate when toggled */
 #nav-toggle:checked~.nav-toggle--label {
-  transform:rotate(90deg)
+  transform: rotate(90deg)
 }
-
-/* Set focus for menu item on hover */
-/* .nav-menu li:hover {
-  background-color: #f1c40f;
-} */
 
 /* MAIN CONTENT */
 main {
@@ -145,7 +141,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 /* Flex applied to align child elements of .banner-landing--text */
 .banner-landing--text {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -153,13 +149,13 @@ to control image filters w/o affecting the headings and paragraphs */
 /* Setting a responsive font-size to banner text */
 .banner-landing--text h2 {
   /* font-weight: 400; */
-  font-size: clamp(2rem, 7vw, 4.5rem);
+  font-size: clamp(2.3rem, 7vw, 4.7rem);
   padding: 1rem 1rem;
   max-width: 20ch;
 }
 
 .banner-landing--text p {
-  font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+  font-size: clamp(1.3rem, 2vw + 0.5rem, 2rem);
   padding: 0 1rem;
   max-width: 50ch;
 }
