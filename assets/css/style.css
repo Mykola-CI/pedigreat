@@ -91,6 +91,10 @@ header a {
   color: inherit;
 }
 
+header h1 {
+  font-size: 200%;
+}
+
 nav {
   position: absolute;
   top: 73px;
@@ -98,12 +102,13 @@ nav {
   right: 0;
   width: 96%;
   margin: auto;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 3rem;
   line-height: 200%;
   border: 1px solid rgba(255, 255, 255, 0.25);
   /* Adding glass morphism */
-  backdrop-filter: blur(15px);
-  background: transparent;
+  /* backdrop-filter: blur(15px); */
+  /* background: transparent; */
+  background-color: #f2e205;
   /* makes entire list hidden until the burger toggled */
   /* opacity-height applied instead of display none  */
   opacity: 0;
