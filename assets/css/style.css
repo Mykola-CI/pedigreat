@@ -36,7 +36,7 @@ Color Theme Swatches in HSLA
   --COLOR-1: #3F4773;
   --COLOR-2: #F2E205;
   --COLOR-3: #F2CB05;
-  --COLOR-4: #F2B807;
+  --COLOR-4: #b28705;
   --COLOR-5: #453914;
 }
 
@@ -270,7 +270,32 @@ to control image filters w/o affecting the headings and paragraphs */
   height: auto;
 }
 
+/* Add styles footer */
 
 footer {
-  background-color: blue;
+  background-color: var(--COLOR-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-address {
+  padding: 20px 0 10px 0;
+}
+.footer-social {
+  width: 100%
+}
+.footer-social ul {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+
+}
+
+footer h5, 
+footer p {
+  color:floralwhite;
+  font-size: 0.8rem;
 }
