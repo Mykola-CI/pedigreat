@@ -157,8 +157,10 @@ main {
   background-color: #f2e2051f;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
+  align-items: center;
+  text-align: center;
 }
 
 /* Banner section on the landing page */
