@@ -204,18 +204,35 @@ to control image filters w/o affecting the headings and paragraphs */
   background-color: #f2e20597;
 }
 
-/* Setting a responsive font-size to banner text */
+/* Setting a responsive font-sizes */
 .banner-landing--text h2 {
   /* font-weight: 400; */
   font-size: clamp(2.5rem, 4vw, 5rem);
   padding: 1rem 1rem;
   max-width: 20ch;
 }
+.about-us h3,
+.services-details h3,
+.gallery-box h3 {
+  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem)
+}
+
+.services h4,
+.testimonials h4,
+.services-details h4 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
 
 .banner-landing--text p {
   font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
   padding: 0 1rem;
   max-width: 30ch;
+}
+
+.about-us p,
+.services p,
+.testimonials p {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.3rem);
 }
 
 /* Shaping button on the landing banner */
@@ -248,21 +265,7 @@ to control image filters w/o affecting the headings and paragraphs */
   height: auto;
 }
 
-.about-us h3 {
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem)
-}
-
-.about-us p,
-.services p,
-.testimonials p {
-  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.3rem);
-}
-
 /* Services section */
-.services h4,
-.testimonials h4 {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-}
 
 .services {
   display: flex;
