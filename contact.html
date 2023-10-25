@@ -32,10 +32,113 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h2>Contact Page</h2>
-        </div>
+        <section class="banner-secondary">
+            <h3 class="hidden-heading">Hidden Heading</h3>
+            <div class="banner-secondary--paralax"></div>
+        </section>
+        <!-- Container for all 'main' elements .contact -->
+        <section class="contact">
+            <!-- Media links container -->
+            <div class="contact--media">
+                <div class="media--icon">
+                    <a href=""></a>
+                    <div class="media--info">
+                        <p>Give Us A Call</p>
+                        <p>0777 777777</p>
+                    </div>
+                </div>
+                <div class="media--icon">
+                    <a href=""></a>
+                    <div class="media--info">
+                        <p>Drop A Line</p>
+                        <p>office@pedigreat.co.uk</p>
+                    </div>
+                </div>
+                <div class="media--icon">
+                    <a href=""></a>
+                    <div class="media--info">
+                        <p>Or Simply Text In WhatsUp</p>
+                        <p>0777 777777</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Customer entire section container -->
+            <div class="contact--form">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>New Customer Form</legend>
+                        <!-- Fieldset area container -->
+                        <div class="contact--form--fieldset-area">
+                            <!-- Client credentials container - left part -->
+                            <div class="contact--form--left">
+                                <div class="contact--form--left">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="e.g. Joann" required>
+                                    <br>
+                                </div>
+                                <div class="contact--form--left">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="e.g. Buttler" required>
+                                    <br>
+                                </div>
+                                <div class="contact--form--left">
+                                    <label for="mobile">Mobile Number</label>
+                                    <input type="tel" id="mobile" placeholder="e.g. 0756787878">
+                                    <br>
+                                </div>
+                                <div class="contact--form--left">
+                                    <label for="email">E-Mail</label>
+                                    <input type="email" id="email" placeholder="e.g. jeronimo@jeronimo.net" required>
+                                    <br>
+                                </div>
+                                <div class="contact--form--left">
+                                    <label for="survey">How did you know about us:</label>
+                                    <select name="survey" id="survey">
+                                        <option value="friend">Referred to by a friend</option>
+                                        <option value="search">Found in search results</option>
+                                        <option value="social">Social media reference</option>
+                                        <option value="other">Other sources</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Pet and other info container - right part -->
+                            <div class="contact--form--right">
+                                <div class="form-elements-right">
+                                    <label for="pet-name">Pet Name</label>
+                                    <input type="text" id="pet-name" placeholder="Enter your pet name here" required>
+                                    <br>
+                                </div>
+                                <fieldset class="form-elements-right">
+                                    <label>What services are you interested in:</label>
+                                    <input id="walking" type="radio" name="service-type" value="walking" checked>
+                                    <label for="walking">Walking</label>
+                                    <input id="visits" type="radio" name="service-type" value="visits">
+                                    <label for="visits">Home Visits</label>
+                                    <input id="boarding" type="radio" name="service-type" value="boarding">
+                                    <label for="boarding">Boarding</label>
+                                    <input id="training" type="radio" name="service-type" value="training">
+                                    <label for="training">Training</label>
+                                </fieldset>
+                                <fieldset class="form-elements-right">
+                                    <label>What size is your pet:</label>
+                                    <input id="small" type="radio" name="pet-size" value="small" checked>
+                                    <label for="small">Small</label>
+                                    <input id="medium" type="radio" name="pet-size" value="medium">
+                                    <label for="medium">Medium</label>
+                                    <input id="large" type="radio" name="pet-size" value="large">
+                                    <label for="large">Large</label>
+                                    <input id="extra-large" type="radio" name="pet-size" value="extra-large">
+                                    <label for="extra-large">Extra Large</label>
+                                </fieldset>
+                                <button type="submit" class="form-elements-right">Submit Form</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
         <section class="footer-address">
             <div>
