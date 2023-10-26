@@ -213,6 +213,7 @@ to control image filters w/o affecting the headings and paragraphs */
   padding: 1rem 1rem;
   max-width: 20ch;
 }
+
 .about-us h3,
 .services-details h3,
 .gallery-box h3 {
@@ -236,6 +237,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .testimonials p {
   font-size: clamp(1rem, 1.5vw + 0.5rem, 1.3rem);
 }
+
 /* --------------------------------- */
 
 
@@ -289,11 +291,27 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 /* Testimonials Section */
-
-#testimonials--image2>img,
-#testimonials--image1>img {
-  width: 100px;
+.section-testimonials {
+  width: 90%;
+}
+.testimonials {
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.339);
+  margin-bottom: 1rem;
+}
+.testimonials--image {
+  width: 80px;
   height: auto;
+  float: left;
+  width: 20%;
+  margin-right: 1rem;
+}
+.testimonials h5 {
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.testimonials p {
+  text-align: justify;
 }
 
 /* Gallery page */
@@ -305,15 +323,15 @@ to control image filters w/o affecting the headings and paragraphs */
   z-index: 1;
   /* background-color: darkred; */
 
-   /* Set the background image */
-   background-image: url("../images/panorama-flowers.webp");
+  /* Set the background image */
+  background-image: url("../images/panorama-flowers.webp");
 
-   /* Create the parallax effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   filter: brightness(50%);
+  /* Create the parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
 }
 
 .gallery-box {
@@ -322,6 +340,7 @@ to control image filters w/o affecting the headings and paragraphs */
   z-index: 2;
   transform: translateY(-25vh);
 }
+
 .gallery-box h3 {
   background-color: cornsilk;
   padding: 1rem 1rem;
@@ -347,6 +366,7 @@ to control image filters w/o affecting the headings and paragraphs */
   transform: translateY(-20vh);
   background-color: cornsilk;
 }
+
 .services--cards--content {
   padding: 1rem;
 }
