@@ -154,7 +154,7 @@ nav {
 
 /* MAIN CONTENT Mobile Format*/
 main {
-  margin-top: 79px;
+  margin-top: 75px;
   /* Pushing footer down */
   flex: 1 0 auto;
   background-color: cornsilk;
@@ -300,16 +300,27 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .banner-secondary {
   width: 100%;
-  height: 25vh;
+  height: 40vh;
   position: relative;
   z-index: 1;
-  background-color: darkred;
+  /* background-color: darkred; */
+
+   /* Set the background image */
+   background-image: url("../images/panorama-flowers.webp");
+
+   /* Create the parallax effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: brightness(50%);
 }
+
 .gallery-box {
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-20vh);
+  transform: translateY(-25vh);
 }
 .gallery-box h3 {
   background-color: cornsilk;
