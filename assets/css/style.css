@@ -340,7 +340,7 @@ to control image filters w/o affecting the headings and paragraphs */
   transform: translateY(-25vh);
 }
 
-.gallery-box h3 {
+.gallery-box h2 {
   background-color: cornsilk;
   padding: 1rem 1rem;
 }
@@ -375,16 +375,25 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .services--cards--content {
-  padding: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border:1px solid #b28705;
+  box-shadow: 0px 2px 5px 2px var(--COLOR-1);
 }
-
+.services--cards--content h3,
+.services--cards--content h4 {
+  padding: 1rem 0;
+}
+.services--cards--content p {
+text-align: justify;
+}
 .services--cards--content img {
-  width: 80px;
+  width: clamp(60px, 30%, 80px);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
-
-/* .services--cards--content {
-  padding: 1rem;
-} */
+.clip-path-shadow {
+  filter: drop-shadow(0px 2px 5px var(--COLOR-4));
+}
 
 /* ---------------------------------------- */
 
