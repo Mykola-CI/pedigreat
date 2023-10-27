@@ -70,9 +70,32 @@ h5 {
   color: var(--COLOR-1);
 }
 
+/* Setting a responsive font-sizes */
+
+h2 {
+  /* font-weight: 400; */
+  font-size: clamp(2.5rem, 4vw, 5rem);
+  padding: 1rem 1rem;
+  max-width: 20ch;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem)
+}
+
+h4 {
+  font-size: clamp(1.2rem, 4.5vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
 p {
+  font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
   line-height: 130%;
 }
+
 
 /* HEADER */
 header {
@@ -206,37 +229,10 @@ to control image filters w/o affecting the headings and paragraphs */
   background-color: #f2e20597;
 }
 
-/* Setting a responsive font-sizes */
-
-.banner-landing--text h2 {
-  /* font-weight: 400; */
-  font-size: clamp(2.5rem, 4vw, 5rem);
-  padding: 1rem 1rem;
-  max-width: 20ch;
-}
-
-.about-us h3,
-.services-details h3,
-.gallery-box h3 {
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem)
-}
-
-.services h4,
-.testimonials h4,
-.services-details h4 {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-}
-
 .banner-landing--text p {
   font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
   padding: 0 1rem;
   max-width: 30ch;
-}
-
-.about-us p,
-.services p,
-.testimonials p {
-  font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
 }
 
 /* --------------------------------- */
@@ -295,23 +291,28 @@ to control image filters w/o affecting the headings and paragraphs */
 .section-testimonials {
   width: 90%;
 }
+
 .testimonials {
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.339);
   margin-bottom: 1rem;
 }
+
 .testimonials--image {
   float: left;
   width: 20%;
   margin-right: 1rem;
 }
+
 .testimonials h5 {
   padding-bottom: 0.5rem;
   text-align: left;
 }
+
 .testimonials p {
   text-align: justify;
 }
+
 .testimonials--image {
   width: 80px;
   height: auto;
