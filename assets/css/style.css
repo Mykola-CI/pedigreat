@@ -346,7 +346,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-25vh);
+  transform: translateY(-27vh);
 }
 
 .gallery-box h2 {
@@ -371,7 +371,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-20vh);
+  transform: translateY(-27vh);
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
@@ -388,10 +388,14 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .services--cards--content {
-  padding: 1rem max(0.5rem, 5vw);
+  max-width: 400px;
+  padding: 1rem max(0.5rem, 2vw);
   margin: 0.5rem;
   border:1px solid #b28705;
   box-shadow: 0px 2px 5px 2px var(--COLOR-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .services--cards--content h3,
 .services--cards--content h4 {
@@ -400,6 +404,24 @@ to control image filters w/o affecting the headings and paragraphs */
 .services--cards--content p {
 text-align: justify;
 }
+
+/* Shape service cards buttons */
+.services--cards--content a {
+  background-color: var(--COLOR-4); 
+    color: white;
+    padding: 15px 15px;
+    margin: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem); 
+    border-radius: 10px; 
+}
+
+.services--cards--content a:hover {
+  background-color: var(--COLOR-1); 
+}
+
 
 /* Shape services icons */
 .services--cards--content img {
