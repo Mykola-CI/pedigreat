@@ -38,7 +38,7 @@ Color Theme Swatches in HSLA
   --COLOR-1: #3F4773;
   --COLOR-2: #F2E205;
   --COLOR-3: #F2CB05;
-  --COLOR-4: #b28705;
+  --COLOR-4: #a37c05;
   --COLOR-5: #453914;
 }
 
@@ -239,15 +239,22 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 /* Shaping button on the landing banner */
-.banner-landing--text a {
-  /* display: block; */
-  margin-top: 1.5rem;
-}
 
-.banner-landing--text button {
-  padding: 0.7rem;
-  font-family: inherit;
-}
+.banner-landing--text a {
+    background-color: var(--COLOR-4); 
+    color: white;
+    padding: 15px 15px;
+    margin: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem); 
+    border-radius: 10px; 
+  }
+  
+  .banner-landing--text a:hover {
+    background-color: var(--COLOR-1); 
+  }
 
 /* About Us section on the landing page */
 .about-us {
@@ -325,14 +332,14 @@ to control image filters w/o affecting the headings and paragraphs */
   /* background-color: darkred; */
 
   /* Set the background image */
-  background-image: url("../images/panorama-flowers.webp");
+  background-image: url("../images/panorama-flowers1.webp");
 
   /* Create the parallax effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%);
+  filter: brightness(50%) hue-rotate(-20deg);
 }
 
 .gallery-box {
