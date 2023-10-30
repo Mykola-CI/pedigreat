@@ -332,15 +332,14 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .banner-secondary {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   position: relative;
   z-index: 1;
-  /* background-color: darkred; */
 
   /* Set the background image */
   background-image: url("../images/panorama-flowers1.webp");
 
-  /* Create the parallax effect */
+  /* Create the fixed image effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,7 +351,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-20vh);
+  transform: translateY(-15vh);
 }
 
 .gallery-box h2 {
@@ -377,7 +376,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-20vh);
+  transform: translateY(-15vh);
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
@@ -484,7 +483,7 @@ to control image filters w/o affecting the headings and paragraphs */
   width: 90%;
   position: relative;
   z-index: 2;
-  transform: translateY(-20vh);
+  transform: translateY(-15vh);
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
@@ -549,7 +548,42 @@ to control image filters w/o affecting the headings and paragraphs */
 .customer-form--button a:hover {
   background-color: var(--COLOR-1);
 }
+/* -----------------end-of-page--------------------- */
 
+/* Customer-form page */
+
+#banner-registration {
+  height: 25vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /* new stacking context is set in order to prevent image 
+  to hide behind background color of the parent 'main' */
+  z-index: 0;
+  /* Flex applied to align entire text-block .banner-landing--text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-registration::before {
+  content: "";
+  background: url("../images/panorama-flowers1.webp")no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(50%) hue-rotate(-20deg);
+}
+
+#banner-registration--text {
+  line-height: normal;
+  background-color: #f2e20597;
+  padding: max(0.5rem, 1vw)  max(0.5rem, 2vw);
+}
 
 /* Add styles footer */
 
