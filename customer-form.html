@@ -32,84 +32,101 @@
     </header>
     <main>
         <section id="banner-registration">
-            <div id="banner-registration--text"><h2>Customer Registration Form</h2></div>
+            <div id="banner-registration--text">
+                <h2>Customer Registration Form</h2>
+            </div>
         </section>
         <!-- New Customer entire section container -->
         <section class="customer-registration">
             <h3 class="hidden-heading">Hidden Heading</h3>
-            <form action="" method="post">
-                <div>
-                    <!-- Client credentials container - left part -->
-                    <div class="customer-registration--left">
-                        <div>
-                            <label for="first-name">First Name:</label>
-                            <br>
-                            <input type="text" id="first-name" placeholder="e.g. Joann" required>
-                            <br>
-                        </div>
-                        <div>
-                            <label for="last-name">Last Name:</label>
-                            <br>
-                            <input type="text" id="last-name" placeholder="e.g. Buttler" required>
-                            <br>
-                        </div>
-                        <div>
-                            <label for="mobile">Mobile Number:</label>
-                            <br>
-                            <input type="tel" id="mobile" placeholder="e.g. 0756787878">
-                            <br>
-                        </div>
-                        <div>
-                            <label for="email">E-Mail:</label>
-                            <br>
-                            <input type="email" id="email" placeholder="e.g. jeronimo@jeronimo.net" required>
-                            <br>
-                        </div>
-                        <div>
-                            <label for="survey">How did you know about us:</label>
-                            <br>
-                            <select name="survey" id="survey">
-                                <option value="friend">Referred to by a friend</option>
-                                <option value="search">Found in search results</option>
-                                <option value="social">Social media reference</option>
-                                <option value="other">Other sources</option>
-                            </select>
-                        </div>
+            <form class="registration--form" action="" method="post">
+                <!-- Client credentials container - left part -->
+                <div class="customer-registration--block">
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <br>
+                        <input type="text" id="first-name" placeholder="e.g. Joann" required>
+                        <br>
                     </div>
-                    <!-- Pet and other info container - right part -->
-                    <div class="customer-registration--right">
-                        <div class="form-elements-right">
-                            <label for="pet-name">Pet Name:</label>
-                            <br>
-                            <input type="text" id="pet-name" placeholder="Enter your pet name here" required>
-                            <br>
-                        </div>
-                        <fieldset class="form-elements-right">
-                            <label>What services are you interested in:</label>
-                            <br>
+                    <div>
+                        <label for="last-name">Last Name:</label>
+                        <br>
+                        <input type="text" id="last-name" placeholder="e.g. Buttler" required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile Number:</label>
+                        <br>
+                        <input type="tel" id="mobile" placeholder="e.g. 0756787878">
+                        <br>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <br>
+                        <input type="email" id="email" placeholder="e.g. jeronimo@jeronimo.net" required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="survey">How did you know about us:</label>
+                        <br>
+                        <select name="survey" id="survey">
+                            <option value="" disabled selected hidden>Pick up a case</option>
+                            <option value="friend">Referred to by a friend</option>
+                            <option value="search">Found in search results</option>
+                            <option value="social">Social media reference</option>
+                            <option value="other">Other sources</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Pet and other info container - right part -->
+                <div class="customer-registration--block">
+                    <div class="form-elements-right">
+                        <label for="pet-name">Pet Name:</label>
+                        <br>
+                        <input type="text" id="pet-name" placeholder="Enter your pet name here" required>
+                        <br>
+                    </div>
+                    <fieldset class="form-elements-right">
+                        <label>What services are you interested in:</label>
+                        <br>
+                        <div>
                             <input id="walking" type="checkbox" name="service-type" value="walking">
                             <label for="walking">Walking</label>
+                        </div>
+                        <div>
                             <input id="visits" type="checkbox" name="service-type" value="visits">
                             <label for="visits">Home Visits</label>
+                        </div>
+                        <div>
                             <input id="boarding" type="checkbox" name="service-type" value="boarding">
                             <label for="boarding">Boarding</label>
+                        </div>
+                        <div>
                             <input id="training" type="checkbox" name="service-type" value="training">
                             <label for="training">Training</label>
-                        </fieldset>
-                        <fieldset class="form-elements-right">
-                            <label>What size is your pet:</label>
-                            <br>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-elements-right">
+                        <label>What size is your pet:</label>
+                        <br>
+                        <div>
                             <input id="small" type="radio" name="pet-size" value="small" checked>
                             <label for="small">Small</label>
+                        </div>
+                        <div>
                             <input id="medium" type="radio" name="pet-size" value="medium">
                             <label for="medium">Medium</label>
+                        </div>
+                        <div>
                             <input id="large" type="radio" name="pet-size" value="large">
                             <label for="large">Large</label>
+                        </div>
+                        <div>
                             <input id="extra-large" type="radio" name="pet-size" value="extra-large">
                             <label for="extra-large">Extra Large</label>
-                        </fieldset>
-                        <button type="submit" class="form-elements-right">Submit Form</button>
-                    </div>
+                        </div>
+                    </fieldset>
+                    <button class="customer-form--button" type="submit">Submit Form</button>
                 </div>
             </form>
         </section>
