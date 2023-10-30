@@ -82,7 +82,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.2rem, 4.5vw, 2rem);
+  font-size: clamp(1.2rem, 4.5vw, 1.8rem);
 }
 
 h5 {
@@ -188,7 +188,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Banner section on the landing page */
@@ -292,16 +292,22 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .description-services {
   width: 90%;
+  max-width: 400px;
   /* height: 40vh; */
-  padding: 1rem;
+  padding: 0.5rem 0.5rem 1.5rem 1.5rem;
   border: 1px solid var(--COLOR-4);
   border-radius: 50% 10% / 10% 40%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.description-services h4 {
+  margin-left: clamp(22px, 13%, 400px);
+}
+
 /* Testimonials Section */
 .section-testimonials {
   width: 90%;
+  max-width: 1200px;
 }
 
 .testimonials {
@@ -357,6 +363,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .gallery-box h2 {
   background-color: cornsilk;
   padding: 1rem 1rem;
+  text-align: center;
 }
 
 .gallery-photos img {
@@ -366,6 +373,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .gallery-photos {
   line-height: 0;
+  column-gap: 0;
 }
 
 /* -------------end-of-page-------------------------- */
@@ -390,6 +398,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .services--cards h2 {
   padding: 2rem max(0.5rem, 5vw);
+  text-align: center;
 }
 
 .services--cards--content {
@@ -502,6 +511,7 @@ to control image filters w/o affecting the headings and paragraphs */
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .media--card--icon {
@@ -519,6 +529,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .customer-form--title {
   margin: 1rem 1rem 2rem 1rem;
+  text-align: center;
 }
 
 .customer-form--descriptions {
@@ -530,6 +541,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .customer-form--button {
   padding: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Shaping the register button  */
