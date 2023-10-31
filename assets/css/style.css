@@ -450,6 +450,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .clip-path-shadow {
   filter: drop-shadow(0px 2px 5px var(--COLOR-4));
+  text-align: center;
 }
 
 .services--notes {
@@ -598,6 +599,8 @@ to control image filters w/o affecting the headings and paragraphs */
   line-height: normal;
   background-color: #f2e20597;
   padding: max(0.5rem, 1vw)  max(0.5rem, 2vw);
+  position: sticky;
+  top: 75px;
 }
 
 /* Section Form customer-form page */
@@ -704,7 +707,11 @@ footer {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+}
 
+.footer-social i {
+  font-size: 160%;
+  padding: 5%;
 }
 
 footer h5,
