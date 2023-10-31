@@ -41,7 +41,7 @@
             <h3 class="hidden-heading">Hidden Heading</h3>
             <form class="registration--form" action="" method="post">
                 <!-- Client credentials container - left part -->
-                <div class="customer-registration--block">
+                <div class="customer-registration--block position-left">
                     <div>
                         <label for="first-name">First Name:</label>
                         <br>
@@ -79,54 +79,54 @@
                     </div>
                 </div>
                 <!-- Pet and other info container - right part -->
-                <div class="customer-registration--block">
-                    <div class="form-elements-right">
+                <div class="customer-registration--block position-right">
+                    <div>
                         <label for="pet-name">Pet Name:</label>
                         <br>
                         <input type="text" id="pet-name" placeholder="Enter your pet name here" required>
                         <br>
                     </div>
-                    <fieldset class="form-elements-right">
-                        <label>What services are you interested in:</label>
+                    <fieldset>
+                        <legend>What services are you interested in:</legend>
                         <br>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="walking" type="checkbox" name="service-type" value="walking">
                             <label for="walking">Walking</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="visits" type="checkbox" name="service-type" value="visits">
                             <label for="visits">Home Visits</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="boarding" type="checkbox" name="service-type" value="boarding">
                             <label for="boarding">Boarding</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="training" type="checkbox" name="service-type" value="training">
                             <label for="training">Training</label>
                         </div>
                     </fieldset>
-                    <fieldset class="form-elements-right">
-                        <label>What size is your pet:</label>
+                    <fieldset>
+                        <legend>What size is your pet:</legend>
                         <br>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="small" type="radio" name="pet-size" value="small" checked>
                             <label for="small">Small</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="medium" type="radio" name="pet-size" value="medium">
                             <label for="medium">Medium</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="large" type="radio" name="pet-size" value="large">
                             <label for="large">Large</label>
                         </div>
-                        <div>
+                        <div class="fieldset-items">
                             <input id="extra-large" type="radio" name="pet-size" value="extra-large">
                             <label for="extra-large">Extra Large</label>
                         </div>
                     </fieldset>
-                    <button class="customer-form--button" type="submit">Submit Form</button>
+                    <button class="registration--form--button" type="submit">Submit Form</button>
                 </div>
             </form>
         </section>

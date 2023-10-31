@@ -90,7 +90,10 @@ h5 {
 }
 
 p,
-li>span {
+li>span,
+label,
+legend,
+option {
   font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
   line-height: 130%;
 }
@@ -602,15 +605,21 @@ to control image filters w/o affecting the headings and paragraphs */
 .customer-registration {
   width: min(100%, 1200px);
   padding: 1rem;
-  background-color: antiquewhite; /* for development purposes */
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.customer-registration *:is(input[type=text], input[type=tel], input[type=email], select, option) {
+.customer-registration label:not(fieldset>div>label),
+.customer-registration legend {
+  font-weight:900;
+}
+
+.customer-registration *:is(input[type=text], input[type=tel], input[type=email], select) {
 padding: 10px;
-width: clamp(250px, 70%, 350px);
+width: 100%;
 font-size: inherit;
 border: 1px solid var(--COLOR-4);
-border-radius: 2px;
+border-radius: 8px;
 }
 
 .customer-registration *:is(input[type=text], input[type=tel], input[type=email], select, option):focus {
@@ -619,17 +628,57 @@ border-radius: 2px;
 .registration--form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
   border: 1px solid var(--COLOR-4);
   box-shadow: inset 0px 0px 13px 12px rgba(0,0,0,0.1);
 }
 
 
-.customer-registration--block > div {
-  padding-bottom: 1rem;
-  font-size: larger;
+.customer-registration--block {
+  padding: 20px 5%;
+  display: flex;
+  flex-direction: column;
 }
+
+.customer-registration--block > div {
+  width: 100%;
+  padding-bottom: 1.5em;
+}
+
+.customer-registration--block fieldset {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.customer-registration--block fieldset label {
+  padding-left: 4px;
+  padding-right: 1rem; 
+  line-height: 200%;
+}
+
+
+.registration--form--button {
+  align-self: center;
+  background-color: var(--COLOR-4);
+  color: white;
+  padding: 15px 15px;
+  margin: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: 'Quattrocento', serif;
+  font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
+  border-radius: 10px;
+}
+
+.registration--form--button:hover {
+  background-color: var(--COLOR-1);
+}
+
+
 
 /* Add styles footer */
 
