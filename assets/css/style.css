@@ -751,14 +751,14 @@ footer {
 }
 
 .footer-social i {
-  font-size: 160%;
+  font-size: clamp(160%, 3vw, 280%);
   padding: 5%;
 }
 
 footer h5,
 footer p {
   color: floralwhite;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
 }
 
 /* MEDIA QUERIES */
@@ -866,15 +866,37 @@ footer p {
   margin-bottom: 2rem;
 }
 
+/* Footer */
+
+footer {
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.footer-address {
+  flex: 1;
+  padding: 20px 0 20px clamp(1rem, 3vw, 2.5rem);
+}
+
+.footer-social {
+  flex: 2;
+}
+
 }
 
 @media screen and (min-width: 1020px) {
-  
+  /* Adjust the gap between the services cards */
   .services {
     gap: 4rem;
   }
-
+/* Change limitation on characters for service cards to stay within 2 column layout */
   .description-services {
     max-width: 45ch;
   }
+
+  .footer-address {
+    padding-left: 3.5rem;
+  }
+
+
 }
