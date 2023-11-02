@@ -279,6 +279,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 /* About Us section on the landing page */
 .about-us {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -289,13 +290,19 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .about-us--image {
   padding: 1rem;
+  text-align: center;
 }
 
 .about-us--image img {
   width: 100%;
-  max-width: 350px;
+  max-width: 260px;
   height: auto;
 }
+
+.about-us--information2 .learn-more {
+  text-align: center;
+  padding: 1rem;
+} 
 
 /* Services section */
 
@@ -773,7 +780,7 @@ footer p {
     background-color: transparent;
     border: none;
     top: 0;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     line-height: normal;
     padding: 0;
   }
@@ -785,23 +792,53 @@ footer p {
   .nav-menu {
     letter-spacing: normal;
     flex: 1;
-    padding: 0 calc(0.5rem + 3 * var(--vw)) 0 calc(1.5rem + 3 * var(--vw));
+    padding: 0 calc(4 * var(--vw)) 0 calc(1.5rem + 3 * var(--vw));
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: calc(3 * var(--vw));
   }
 
   .nav-menu>li {
     font-size: clamp(0.8rem, 2vw + 0.2rem, 1.3rem);
     padding: 0.9rem 0.5rem 0.5rem 0.5rem;
-    flex: 1;
+    /* flex: 1; */
+    width: 120px;
     height: 50px;
     border-radius: 16px;
     background: #f2cb05;
     box-shadow: -17px 17px 43px #cbab04,
       17px -17px 43px #ffeb06;
   }
+
+  /* Main sections of the landing page */
+
+.about-us {
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-us > h3 {
+  padding-left: 1rem;
+}
+
+.about-us > div {
+  display: flex;
+}
+.flex-even {
+  flex: 3;
+  padding: 0.7rem;
+}
+
+
+.about-us--image {
+  order: -1;
+  /* text-align: left;  */
+  padding-left: 0;
+  /* margin-top: 2px; */
+  flex: 2;
+}
 
 }
