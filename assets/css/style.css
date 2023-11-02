@@ -134,9 +134,6 @@ nav {
   padding: 0.5rem 3rem;
   line-height: 200%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  /* Adding glass morphism */
-  /* backdrop-filter: blur(15px); */
-  /* background: transparent; */
   background-color: #f2e205;
   /* makes entire list hidden until the burger toggled */
   /* opacity-height applied instead of display none  */
@@ -747,4 +744,64 @@ footer h5,
 footer p {
   color: floralwhite;
   font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+/* IPad-mini + */
+
+/* header and nav-bar */
+@media screen and (min-width: 765px) {
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+    padding: 0 0 0 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0;
+    flex-basis: 80%;
+    align-self: stretch;
+    opacity: 1;
+    max-height: fit-content;
+    transition: none;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    padding: 0.5rem;
+    line-height: normal;
+    padding: 0;
+  }
+
+  .nav-toggle--label {
+    display: none;
+  }
+
+  .nav-menu {
+    letter-spacing: normal;
+    flex: 1;
+    padding: 0 calc(0.5rem + 3 * var(--vw)) 0 calc(1.5rem + 3 * var(--vw));
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-menu>li {
+    font-size: clamp(0.8rem, 2vw + 0.2rem, 1.3rem);
+    padding: 0.9rem 0.5rem 0.5rem 0.5rem;
+    flex: 1;
+    height: 50px;
+    border-radius: 16px;
+    background: #f2cb05;
+    box-shadow: -17px 17px 43px #cbab04,
+      17px -17px 43px #ffeb06;
+  }
+
 }
