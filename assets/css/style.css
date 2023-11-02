@@ -276,7 +276,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 /* About Us section on the landing page */
 .about-us {
-  max-width: 1300px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -304,14 +304,16 @@ to control image filters w/o affecting the headings and paragraphs */
 /* Services section */
 
 .services {
-  max-width: 1300px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
-  padding: 6px;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  border-bottom: 1px solid #a37c05;
+  border-top: 1px solid #a37c05;
 }
 
 .description-services {
@@ -337,7 +339,7 @@ to control image filters w/o affecting the headings and paragraphs */
 /* Testimonials Section */
 .section-testimonials {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .testimonials {
@@ -824,7 +826,7 @@ footer p {
   position: relative;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
 .about-us > h3 {
@@ -851,10 +853,17 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .description-services {
   max-width: 32ch;
+}
+
+.section-testimonials {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 }
@@ -867,5 +876,11 @@ footer p {
 
   .description-services {
     max-width: 45ch;
+  }
+
+  .services,
+  .about-us,
+  .section-testimonials {
+    
   }
 }
