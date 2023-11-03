@@ -80,7 +80,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4.5vw, 2.5rem)
+  font-size: clamp(1.5rem, 4.5vw, 2.2rem)
 }
 
 h4 {
@@ -299,7 +299,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .about-us--information2 .learn-more {
   text-align: center;
   padding: 1rem;
-} 
+}
 
 /* Services section */
 
@@ -428,7 +428,7 @@ to control image filters w/o affecting the headings and paragraphs */
   align-items: center;
 }
 
-.services--cards h2 {
+.services-details h2 {
   padding: 2rem max(0.5rem, 5vw);
   text-align: center;
 }
@@ -488,7 +488,7 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .notes-item {
-  padding: max(0.5rem, 5vw);
+  padding: clamp(0.5rem, 4vw, 1rem);
   margin: 0.5rem;
   text-align: justify;
   border: 1px solid #b28705;
@@ -822,81 +822,143 @@ footer p {
 
   /* Main sections of the landing page */
 
-.about-us {
-  position: relative;
-  justify-content: space-between;
-  align-items: flex-start;
-  /* margin-bottom: 1rem; */
-}
+  .about-us {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-bottom: 1rem; */
+  }
 
-.about-us > h3 {
-  padding-left: 1rem;
-}
+  .about-us>h3 {
+    padding-left: 1rem;
+  }
 
-.about-us > div {
-  display: flex;
-}
-.flex-even {
-  flex: 3;
-  padding: 0.7rem;
-}
+  .about-us>div {
+    display: flex;
+  }
+
+  .flex-even {
+    flex: 3;
+    padding: 0.7rem;
+  }
 
 
-.about-us--image {
-  order: -1;
-  padding-left: 0;
-  flex: 2;
-}
+  .about-us--image {
+    order: -1;
+    padding-left: 0;
+    flex: 2;
+  }
 
-.services {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.description-services {
-  max-width: 32ch;
-}
+  .description-services {
+    max-width: 32ch;
+  }
 
-.section-testimonials {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+  .section-testimonials {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 
-/* Footer */
+  /* Footer */
 
-footer {
-  flex-direction: row;
-  /* justify-content: space-between; */
-}
+  footer {
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
 
-.footer-address {
-  flex: 1;
-  padding: 20px 0 20px clamp(1rem, 3vw, 2.5rem);
-}
+  .footer-address {
+    flex: 1;
+    padding: 20px 0 20px clamp(1rem, 3vw, 2.5rem);
+  }
 
-.footer-social {
-  flex: 2;
-}
+  .footer-social {
+    flex: 2;
+  }
+
+  /* Gallery Page */
+  .gallery-photos {
+    column-count: 2;
+  }
+
+  /* Services Page */
+
+  .services--cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .services--cards--content {
+    justify-content: space-between;
+  }
+
+  /* .notes-item {
+    flex: 1;
+  } */
+
+  .personnel-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .personnel-left > div {
+    display: flex;
+  }
+
+  .ul-special-style {
+    padding-right: 1rem;
+  }
 
 }
 
 @media screen and (min-width: 1020px) {
+
   /* Adjust the gap between the services cards */
   .services {
     gap: 4rem;
   }
-/* Change limitation on characters for service cards to stay within 2 column layout */
+
+  /* Change limitation on characters for service cards to stay within 2 column layout */
   .description-services {
     max-width: 45ch;
   }
 
+  /* Adjust left spacing for large screens - addres in footer */
   .footer-address {
     padding-left: 3.5rem;
   }
 
+  /* Gallery page */
+
+  .gallery-photos {
+    column-count: 3;
+  }
+
+
+}
+
+@media screen and (min-width: 1600px) {
+
+  .services--cards {
+    flex-wrap: nowrap;
+  }
+
+.services--notes {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .notes-item {
+    border: none;
+  }
 
 }
