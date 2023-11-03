@@ -953,9 +953,22 @@ footer p {
     column-count: 3;
   }
 
+  /* Registration form */
+  .registration--form {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .customer-registration--block {
+    padding: 0 1.5rem;
+    flex: 1;
+  }
+
 }
 
 @media screen and (min-width: 1380px) and (max-width: 1600px) {
+
+  /* Manages price cards to prevent from switching to 3-column 2 rows layout */
   .services--cards {
     max-width: 1000px;
     gap: 2rem
@@ -965,7 +978,9 @@ footer p {
 @media screen and (min-width: 1600px) {
 
   .services--cards {
+    /* max-width return to initial value after the previous query */
     max-width: 100%;
+    /* Ensure all 4 cards in one row */
     flex-wrap: nowrap;
     gap: 0;
   }
