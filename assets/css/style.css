@@ -420,6 +420,7 @@ to control image filters w/o affecting the headings and paragraphs */
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .services--cards {
@@ -901,15 +902,12 @@ footer p {
     justify-content: space-between;
   }
 
-  /* .notes-item {
-    flex: 1;
-  } */
-
   .personnel-left {
     display: flex;
     flex-direction: column;
   }
-  .personnel-left > div {
+
+  .personnel-left>div {
     display: flex;
   }
 
@@ -957,13 +955,22 @@ footer p {
 
 }
 
+@media screen and (min-width: 1380px) and (max-width: 1600px) {
+  .services--cards {
+    max-width: 1000px;
+    gap: 2rem
+  }
+}
+
 @media screen and (min-width: 1600px) {
 
   .services--cards {
+    max-width: 100%;
     flex-wrap: nowrap;
+    gap: 0;
   }
 
-.services--notes {
+  .services--notes {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 2rem;
