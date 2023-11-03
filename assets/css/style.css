@@ -917,6 +917,19 @@ footer p {
     padding-right: 1rem;
   }
 
+  /* Contact Page */
+
+  .contact--media {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+
+  .media--card {
+    flex: 1
+  }
+
 }
 
 @media screen and (min-width: 1020px) {
@@ -941,7 +954,6 @@ footer p {
   .gallery-photos {
     column-count: 3;
   }
-
 
 }
 
