@@ -226,6 +226,7 @@ to control image filters w/o affecting the headings and paragraphs */
   align-items: center;
   background-color: #f2e20597;
   max-height: 100%;
+  max-width: 95%;
 }
 
 .banner-landing--text h2 {
