@@ -299,7 +299,7 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .learn-more a {
-color: var(--COLOR-1);
+  color: var(--COLOR-1);
 }
 
 .learn-more a:hover {
@@ -673,8 +673,9 @@ color: var(--COLOR-1);
   border: 3px solid var(--COLOR-1);
 }
 
-.customer-registration--block > div:focus-within label {
-  color: blue;
+.customer-registration--block>div:focus-within label {
+  color:rgb(51, 51, 160);
+  font-size: 150%;
 }
 
 .registration--form {
@@ -686,10 +687,11 @@ color: var(--COLOR-1);
   border: 1px solid var(--COLOR-4);
   box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);
 }
+
 /* Does not take effect (possible reason: default browser rendering */
 .customer-registration--block option {
-font-family: serif;
-background-color: #f2e205;
+  font-family: serif;
+  background-color: var(--COLOR-2);
 }
 
 .customer-registration--block {
@@ -860,8 +862,18 @@ footer p {
     height: 50px;
     border-radius: 16px;
     background: #f2cb05;
-    box-shadow: -17px 17px 43px #cbab04,
-      17px -17px 43px #ffeb06;
+    box-shadow: -20px 20px 55px #a98e04,
+      20px -20px 55px #ffff07;
+  }
+
+  .nav-menu>li:hover {
+    background: linear-gradient(315deg, #dab705, #ffd905);
+    box-shadow: -45px -45px 64px #8a7403,
+      45px 45px 64px #ffff07;
+  }
+
+  .nav-menu>li:hover {
+    background-color: var(--COLOR-1);
   }
 
   /* Main sections of the landing page */
@@ -930,6 +942,7 @@ footer p {
   /* Gallery Page */
   .gallery-photos {
     column-count: 2;
+    background-color: var(--COLOR-3);
   }
 
   /* Services Page */
