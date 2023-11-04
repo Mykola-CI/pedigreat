@@ -131,7 +131,7 @@ nav {
   padding: 0.5rem 3rem;
   line-height: 200%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  background-color: #f2e205;
+  background-color: var(--COLOR-2);
   /* makes entire list hidden until the burger toggled */
   /* opacity-height applied instead of display none  */
   opacity: 0;
@@ -149,6 +149,7 @@ nav {
 .nav-toggle--label {
   font-size: 2rem;
   padding-right: 0.5em;
+  color: var(--COLOR-1);
 }
 
 /* Add hidden items: section headings and checkbox */
@@ -296,6 +297,15 @@ to control image filters w/o affecting the headings and paragraphs */
   max-width: 260px;
   height: auto;
 }
+
+.learn-more a {
+color: var(--COLOR-1);
+}
+
+.learn-more a:hover {
+  font-size: larger;
+}
+
 
 .about-us--information2 .learn-more {
   text-align: center;
@@ -767,8 +777,16 @@ footer {
 
 footer h5,
 footer p {
-  color: floralwhite;
+  color: cornsilk;
   font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+}
+
+.fa-brands {
+  color: cornsilk;
+}
+
+.fa-brands:hover {
+  color: var(--COLOR-1)
 }
 
 /* Response Page styles */
