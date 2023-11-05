@@ -178,7 +178,7 @@ nav {
 }
 
 
-/* MAIN CONTENT Mobile Format*/
+/* MAIN CONTENT Mobile First*/
 main {
   margin-top: 81.59px;
   /* Pushing footer down */
@@ -255,7 +255,7 @@ to control image filters w/o affecting the headings and paragraphs */
   font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
   border-radius: 10px;
 
-  }
+}
 
 }
 
@@ -693,11 +693,11 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .customer-registration--block fieldset {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem calc(10 * var(--vw));
   margin-bottom: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .customer-registration--block fieldset label {
@@ -799,7 +799,7 @@ footer p {
   }
 }
 
-/* IPad-mini + */
+/* IPad-mini => */
 
 /* header and nav-bar */
 @media screen and (min-width: 765px) {
@@ -973,7 +973,20 @@ footer p {
   .media--card {
     flex: 1
   }
+
+  /* Customer Form page */
+  .customer-registration--block fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+
+  .fieldset-items {
+    padding-right: 0.5rem;
+  }
+
 }
+
 
 @media screen and (min-width: 1020px) {
 
@@ -1058,7 +1071,6 @@ footer p {
 
 @media (orientation: landscape) {
   .banner-landing--text a {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
-
