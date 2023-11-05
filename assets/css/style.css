@@ -72,7 +72,6 @@ legend {
   line-height: 130%;
 }
 
-
 /* HEADER */
 header {
   background-color: var(--COLOR-3);
@@ -266,7 +265,6 @@ to control image filters w/o affecting the headings and paragraphs */
   font-size: larger;
 }
 
-
 .about-us--information2 .learn-more {
   text-align: center;
   padding: 1rem;
@@ -304,7 +302,6 @@ to control image filters w/o affecting the headings and paragraphs */
   padding-top: 0.5rem;
 }
 
-
 /* Testimonials Section */
 .section-testimonials {
   width: 90%;
@@ -333,7 +330,6 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 /* -------------end-of-page-------------------------- */
-
 
 /* Gallery page */
 
