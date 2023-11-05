@@ -1,29 +1,6 @@
 /* import of fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento&display=swap');
 
-/* Color Theme Swatches in Hex
-.Postane-1-hex { color: #3F4773; }
-.Postane-2-hex { color: #F2E205; }
-.Postane-3-hex { color: #F2CB05; }
-.Postane-4-hex { color: #F2B807; }
-.Postane-5-hex { color: #A68932; }
-
-Color Theme Swatches in RGBA
-.Postane-1-rgba { color: rgba(63, 70, 114, 1); }
-.Postane-2-rgba { color: rgba(242, 226, 4, 1); }
-.Postane-3-rgba { color: rgba(242, 202, 4, 1); }
-.Postane-4-rgba { color: rgba(242, 183, 7, 1); }
-.Postane-5-rgba { color: rgba(165, 136, 49, 1); }
-
-Color Theme Swatches in HSLA
-.Postane-1-hsla { color: hsla(230, 29, 34, 1); }
-.Postane-2-hsla { color: hsla(56, 96, 48, 1); }
-.Postane-3-hsla { color: hsla(50, 96, 48, 1); }
-.Postane-4-hsla { color: hsla(45, 94, 48, 1); }
-.Postane-5-hsla { color: hsla(44, 53, 42, 1); } */
-
-
-
 /* Global declarations in wildcard */
 *,
 * ::after,
@@ -75,12 +52,11 @@ h5 {
 /* Setting a responsive font-sizes */
 
 h2 {
-  /* font-weight: 400; */
   font-size: clamp(2rem, 5vw + 0.5rem, 5rem);
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4.5vw, 2.2rem)
+  font-size: clamp(1.5rem, 4.5vw, 2.2rem);
 }
 
 h4 {
@@ -177,7 +153,6 @@ nav {
   border-bottom: 1px solid #3a3a3a;
 }
 
-
 /* MAIN CONTENT Mobile First*/
 main {
   margin-top: 81.59px;
@@ -225,6 +200,7 @@ to control image filters w/o affecting the headings and paragraphs */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Color-2 from the palette w/t opacity */
   background-color: #f2e20597;
   max-height: 100%;
   max-width: 95%;
@@ -246,7 +222,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .banner-landing--text a {
   background-color: var(--COLOR-4);
-  color: white;
+  color: cornsilk;
   padding: 15px 15px;
   margin: 1rem;
   text-decoration: none;
@@ -254,9 +230,6 @@ to control image filters w/o affecting the headings and paragraphs */
   border: none;
   font-size: clamp(0.8rem, 2vw + 0.5rem, 1.3rem);
   border-radius: 10px;
-
-}
-
 }
 
 .banner-landing--text a:hover {
@@ -305,7 +278,6 @@ to control image filters w/o affecting the headings and paragraphs */
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
@@ -317,7 +289,6 @@ to control image filters w/o affecting the headings and paragraphs */
 .description-services {
   width: 95%;
   max-width: 400px;
-  /* height: 40vh; */
   padding: 0.5rem 0.3rem 1.5rem 1rem;
   border: 1px solid var(--COLOR-4);
   border-radius: 50% 10% / 10% 40%;
@@ -615,7 +586,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 #banner-registration::before {
   content: "";
-  background: url("../images/panorama-flowers1.webp")no-repeat center center/cover;
+  background: url("../images/panorama-flowers1.webp") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -706,11 +677,10 @@ to control image filters w/o affecting the headings and paragraphs */
   line-height: 200%;
 }
 
-
 .registration--form--button {
   align-self: center;
   background-color: var(--COLOR-4);
-  color: white;
+  color: cornsilk;
   padding: 15px 15px;
   margin: 1rem;
   text-decoration: none;
@@ -724,8 +694,6 @@ to control image filters w/o affecting the headings and paragraphs */
 .registration--form--button:hover {
   background-color: var(--COLOR-1);
 }
-
-
 
 /* Add styles footer */
 
@@ -787,7 +755,6 @@ footer p {
   height: auto;
 }
 
-
 /* MEDIA QUERIES */
 
 /* Trigger padding for the input fields as from smaller screens */
@@ -824,7 +791,6 @@ footer p {
     background-color: transparent;
     border: none;
     top: 0;
-    /* padding: 0.5rem; */
     line-height: normal;
     padding: 0;
   }
@@ -847,7 +813,6 @@ footer p {
   .nav-menu>li {
     font-size: clamp(0.8rem, 2vw + 0.2rem, 1.3rem);
     padding: 0.9rem 0.5rem 0.5rem 0.5rem;
-    /* flex: 1; */
     width: 120px;
     height: 50px;
     border-radius: 16px;
@@ -872,7 +837,6 @@ footer p {
     position: relative;
     justify-content: space-between;
     align-items: flex-start;
-    /* margin-bottom: 1rem; */
   }
 
   .about-us>h3 {
@@ -887,7 +851,6 @@ footer p {
     flex: 3;
     padding: 0.7rem;
   }
-
 
   .about-us--image {
     order: -1;
@@ -917,7 +880,6 @@ footer p {
 
   footer {
     flex-direction: row;
-    /* justify-content: space-between; */
   }
 
   .footer-address {
@@ -986,7 +948,6 @@ footer p {
   }
 
 }
-
 
 @media screen and (min-width: 1020px) {
 
@@ -1066,7 +1027,6 @@ footer p {
   .banner-landing--text p {
     font-size: 1.2rem;
   }
-
 }
 
 @media (orientation: landscape) {
