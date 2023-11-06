@@ -891,7 +891,7 @@ footer p {
   /* Gallery Page */
   .gallery-photos {
     column-count: 2;
-    background-color: var(--COLOR-3);
+    background-color: var(--COLOR-2);
   }
 
   /* Services Page */
