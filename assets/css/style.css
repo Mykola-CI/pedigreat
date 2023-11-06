@@ -12,11 +12,12 @@
 
 /* CUSTOM COLOR VARIABLES */
 :root {
-  --COLOR-1: #3F4773;
-  --COLOR-2: #F2E205;
-  --COLOR-3: #F2CB05;
-  --COLOR-4: #a37c05;
-  --COLOR-5: #453914;
+  --QUASI-WHITE: rgb(255, 251, 237);
+  --COLOR-1: rgba(63, 70, 114, 1);
+  --COLOR-2: rgba(242, 226, 4, 1);
+  --COLOR-3: rgba(242, 202, 4, 1);
+  --COLOR-4: rgba(101, 100, 89, 1);
+  --COLOR-5: rgba(66, 55, 20, 1);
   /* Setting variable for responsive design */
   --vw: 1vw;
 }
@@ -157,7 +158,7 @@ main {
   margin-top: 81.59px;
   /* Pushing footer down */
   flex: 1 0 auto;
-  background-color: cornsilk;
+  background-color: var(--QUASI-WHITE);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,7 +201,7 @@ to control image filters w/o affecting the headings and paragraphs */
   flex-direction: column;
   align-items: center;
   /* Color-2 from the palette w/t opacity */
-  background-color: #f2e20597;
+  background-color: rgba(242, 226, 4, 0.8);
   max-height: 100%;
   max-width: 95%;
 }
@@ -221,7 +222,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .banner-landing--text a {
   background-color: var(--COLOR-4);
-  color: cornsilk;
+  color: var(--QUASI-WHITE);
   padding: 15px 15px;
   margin: 1rem;
   text-decoration: none;
@@ -358,7 +359,7 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 .gallery-box h2 {
-  background-color: cornsilk;
+  background-color: var(--QUASI-WHITE);
   padding: 1rem 1rem;
   text-align: center;
 }
@@ -382,7 +383,7 @@ to control image filters w/o affecting the headings and paragraphs */
   position: relative;
   z-index: 2;
   transform: translateY(-15vh);
-  background-color: cornsilk;
+  background-color: var(--QUASI-WHITE);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -492,7 +493,7 @@ to control image filters w/o affecting the headings and paragraphs */
   position: relative;
   z-index: 2;
   transform: translateY(-15vh);
-  background-color: cornsilk;
+  background-color: var(--QUASI-WHITE);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -676,7 +677,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .registration--form--button {
   align-self: center;
   background-color: var(--COLOR-4);
-  color: cornsilk;
+  color: var(--QUASI-WHITE);
   padding: 15px 15px;
   margin: 1rem;
   text-decoration: none;
@@ -724,16 +725,16 @@ footer {
 
 footer h5,
 footer p {
-  color: cornsilk;
+  color: var(--QUASI-WHITE);
   font-size: clamp(0.8rem, 1.5vw, 1.3rem);
 }
 
 .fa-brands {
-  color: cornsilk;
+  color: var(--QUASI-WHITE);
 }
 
 .fa-brands:hover {
-  color: var(--COLOR-1)
+  color: var(--COLOR-2)
 }
 
 /* Response Page styles */
