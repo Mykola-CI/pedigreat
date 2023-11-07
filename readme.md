@@ -39,6 +39,30 @@ The first user's hit will be the landing page and the banner. It is equipped wit
 * Header with logo and navigation bar 
 * Main Slogan followed by the button "Book Now" and Themed Banner at the Background  
 
-See the sight navigation scheme in pdf: [Site Navigation Scheme](documentation/navigation-pedigreat.pdf)
+See the site navigation scheme in pdf: [Site Navigation Scheme](documentation/navigation-pedigreat.pdf)
 
-![Navigation Scheme Screen](documentation/navigation-scheme-screen.png)
+![Navigation Scheme Screen](documentation/navigation-scheme-screen.png "Navigation Scheme Screen")
+
+Navigation is provided by the following buttons within the navigation bar:
+* Home (Landing Page)
+* Gallery (Photo gallery)
+* Services (description of Services and price cards)
+* Contacts: 
+    - Contact details for booking and any communication 
+    - Invitation to join Community and Loyalty program
+
+The 'Home' Page contains a button-link to the 'Contacts' Page.
+
+![Book Now button under the Slogan](documentation/book-now-button.png)
+
+'Home' Page also contains Learn More Links that lead to the Services Page
+
+![Learn More link visual](documentation/learn-more-presentation.png)
+
+The 'Contacts' Page contains the Invitation to fill out the Form and a Button encouraging to jump to the "Customer Registration Form".
+
+![Invitation to Register Button](documentation/invitation-to-register.png)
+
+
+Once the Form has been submitted User will get into the 'Response' Page as shown in Site Mapping diagram above.
+
