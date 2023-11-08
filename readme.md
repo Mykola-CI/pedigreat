@@ -66,7 +66,10 @@ The 'Contacts' Page contains the Invitation to fill out the Form and a Button en
 Once the Form has been submitted User will get into the 'Response' Page as shown in the Site Mapping diagram above.
 
 ## Existing Features
-### Navigation Bar
+The page is divided onto 3 global sections: Header, Main and Footer.   
+The Main section of the Front page is divided onto 4 sections: Banner section, About Us, Services and Testimonials
+
+### Header and Navigation Bar
 The header takes a fixed position at the top of the screen.  
 The header contains a clickable Logo Pedigreat, which leads User to the home page. The only hover effect for logo is a cursor-pointer transformation with no focus features. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
 
@@ -74,7 +77,7 @@ The following visual is a presentation of how header looks on tablet-size screen
 
 ![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
 
-The 'focus' animation with transition of lighting pattern delivered by means of css shadow effects:
+The 'focus' effect in the form of animated lighting pattern delivered by means of css shadow effects:
 
 ![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
 
@@ -92,9 +95,12 @@ Where 2 basic effects were adopted for the site:
 
 ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
 
+### Banner Section on the front page
+The Banner on the front Page is arranged as a '::before' pseudo-class in order to gain control over the background image opacity and filters without affecting the properties of the texts. At the same time the text slogan has the background of its own to provide for the required contrast. And it has opacity of its own which helps retain consistency throughout the major banner 
 
+![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
 
-
+The banner itself takes about 75% of the viewport height just enough to reveal a part of the next section - About Us. 
 
 
 
