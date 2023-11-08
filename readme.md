@@ -36,7 +36,7 @@ Yet the registration form will appear on one of the pages because Pedigreat offe
 ## Global functionality and navigation
 The first user's hit will be the landing page and the banner. It is equipped with 
 * Header with logo and navigation bar 
-* Main Slogan followed by the button "Book Now" and Themed Banner at the Background  
+* Main Slogan followed by the button "Book Now" and the Themed Banner at the Background  
 
 See the site navigation scheme in pdf: [Site Navigation Scheme](documentation/navigation-pedigreat.pdf)
 
@@ -65,15 +65,34 @@ The 'Contacts' Page contains the Invitation to fill out the Form and a Button en
 
 Once the Form has been submitted User will get into the 'Response' Page as shown in the Site Mapping diagram above.
 
-## Features
+## Existing Features
 ### Navigation Bar
+The header takes a fixed position at the top of the screen.  
+The header contains a clickable Logo Pedigreat, which leads User to the home page. The only hover effect for logo is a cursor-pointer transformation with no focus features. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
 
+The following visual is a presentation of how header looks on tablet-size screens. There are buttons for the menu items which change the lighting pattern on focus. 
 
 ![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
 
+The 'focus' animation with transition of lighting pattern delivered by means of css shadow effects:
+
+![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
+
+The following visual is a presentation of how header looks on mobile-size screens. There is a conventional Burger Icon. 
+
 ![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
 
+With the drop-down menu:
+
 ![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
+
+Where 2 basic effects were adopted for the site: 
+- rotation of the burger icon 90º on touch
+- drop-down menu transition 1sec ease-in-out
+
+![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
+
+
 
 
 
