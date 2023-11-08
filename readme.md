@@ -33,8 +33,7 @@ Technically the web-site is supposed to employ html & css tools only at the firs
 
 Yet the registration form will appear on one of the pages because Pedigreat offers promotions and cross-promotions, as well as email newsletters for the registered clients. Many of users' wants can be met in the newsletter communication and a relevant event marketing.
 
-## About Web-site structure and features
-### Global functionality and navigation
+## Global functionality and navigation
 The first user's hit will be the landing page and the banner. It is equipped with 
 * Header with logo and navigation bar 
 * Main Slogan followed by the button "Book Now" and Themed Banner at the Background  
@@ -64,5 +63,20 @@ The 'Contacts' Page contains the Invitation to fill out the Form and a Button en
 ![Invitation to Register Button](documentation/invitation-to-register.png)
 
 
-Once the Form has been submitted User will get into the 'Response' Page as shown in Site Mapping diagram above.
+Once the Form has been submitted User will get into the 'Response' Page as shown in the Site Mapping diagram above.
+
+## Features
+### Navigation Bar
+
+
+![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
+
+![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
+
+![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
+
+
+
+
+
 
