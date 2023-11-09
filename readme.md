@@ -52,15 +52,15 @@ Navigation is provided by the following buttons within the navigation bar:
 
 The 'Home' Page contains a button-link to the 'Contacts' Page.
 
-![Book Now button under the Slogan](documentation/book-now-button.png)
+   ![Book Now button under the Slogan](documentation/book-now-button.png)
 
 'Home' Page also contains Learn More Links that lead to the Services Page
 
-![Learn More link visual](documentation/learn-more-presentation.png)
+   ![Learn More link visual](documentation/learn-more-presentation.png)
 
 The 'Contacts' Page contains the Invitation to fill out the Form and a Button encouraging to jump to the "Customer Registration Form".
 
-![Invitation to Register Button](documentation/invitation-to-register.png)
+   ![Invitation to Register Button](documentation/invitation-to-register.png)
 
 
 Once the Form has been submitted User will get into the 'Response' Page as shown in the Site Mapping diagram above.
@@ -79,28 +79,84 @@ The following visual is a presentation of how header looks on tablet-size screen
 
 The 'focus' effect in the form of animated lighting pattern delivered by means of css shadow effects:
 
-![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
+* ![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
 
 The following visual is a presentation of how header looks on mobile-size screens. There is a conventional Burger Icon. 
 
-![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
+* ![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
 
 With the drop-down menu:
 
-![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
+* ![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
 
 Where 2 basic effects were adopted for the site: 
 - rotation of the burger icon 90º on touch
 - drop-down menu transition 1sec ease-in-out
 
-![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
+* ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
 
 ### Banner Section on the front page
-The Banner on the front Page is arranged as a '::before' pseudo-class in order to gain control over the background image opacity and filters without affecting the properties of the texts. At the same time the text slogan has the background of its own to provide for the required contrast. And it has opacity of its own which helps retain consistency throughout the major banner 
+The Banner on the front Page is arranged as a '::before' pseudo-class in order to gain control over the background image opacity and filters without affecting the properties of the texts. At the same time the text slogan has the background of its own to provide for the required contrast, its opacity helping retain consistency throughout the major banner 
 
-![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
+  ![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
 
-The banner itself takes about 75% of the viewport height just enough to reveal a part of the next section - About Us. 
+The banner itself takes about 75% of the viewport height just enough to reveal a part of the next section - About Us.
+
+### About Us and Services sections on the front page
+About Us section tells User a few words about the Pedigreat team and its dedication, which is followed by the brief descriptions of 4 distinct types of services in offer.
+* The About Us block consists of h3 heading, 2 text blocks and the image of collage portraits photos.
+* The Service Descriptions block consists of 4 text cards with elegant curvy borders and smooth shadowing.
+Both sections as well as the following Testimonials section are made coherent with the small left and right margins. Technically, this is attained by means of width 95% of their parent, max-width 400px (for responsive design at larger widths) and flex-centered layout.  
+
+  ![About Us - Mobile view](documentation/mobile-about-us.png) ![Service Descriptions - Mobile view](documentation/mobile-service-intro.png)
+
+### Testimonials section on the front page
+This section is featured with 2 testimonials, which organized 
+* as 2 cards with the photo of a pet-owner, name, occupation and the story
+* each placed in a container with a thin border and smooth shadowing
+* images are placed at the top left with the properties 
+  - float: left and 
+  - width: min(20%, 100px) 
+
+  ![Testimonials combined with Service cards - Tablet view](documentation/testimonials-section-tablet.png)
+
+### Footer
+Footer is the global element which is repeated across all the pages in the similar manner as Header.
+Unlike Header its position is not fixed, it is pushed down by flex-property of the Main section: flex: 1 0 auto;.
+
+The Footer contains:
+* Address block
+* 4 Social media icons, which change color on focus
+
+![Footer Tablet View](documentation/footer-tablet-view.png)
+
+![Footer Tablet View](documentation/footer-mobile-view.png)
+
+The social media icons change color on hover:
+
+![Hover effect on media icons](documentation/media-icons-hover.gif)
+
+### Secondary banner and layout
+Gallery, Services and Contacts pages have a common layout scheme. 
+
+### Gallery Page
+
+This common element in almost every site is organized in simple and nice masonry style. Live and dynamic view without gaps and borders gives a touch of reality.  
+Photos are laid out with a 'column' property.
+* default one column for mobiles
+* column-count: 2 for the screens larger than 765px
+* column-count: 3 for the screens larger than 1020px
+
+The screens with 2 or 3 columns are featured with the additional yellow background from the adopted color scheme. This feature is applied in order to rectify suspended and unfinished graphics of the bottom part of the masonry.
+
+![Gallery Bottom background pattern](documentation/gallery-bottom-background.png)
+
+### Services Page
+
+
+
+  
+
 
 
 
