@@ -96,7 +96,21 @@ Where 2 basic effects were adopted for the site:
 * ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
 
 ### Banner Section on the front page
-The Banner on the front Page is arranged as a '::before' pseudo-class in order to gain control over the background image opacity and filters without affecting the properties of the texts. At the same time the text slogan has the background of its own to provide for the required contrast, its opacity helping retain consistency throughout the major banner 
+The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text contents.   
+
+```.banner-landing::before {
+  content: "";
+  background: url() no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(2px) opacity(100%);
+}
+```
+At the same time the text slogan has the background of its own to provide for the required contrast, its opacity helping retain consistency throughout the major banner 
 
   ![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
 
@@ -136,8 +150,29 @@ The social media icons change color on hover:
 
 ![Hover effect on media icons](documentation/media-icons-hover.gif)
 
-### Secondary banner and layout
-Gallery, Services and Contacts pages have a common layout scheme. 
+### Secondary banner and the other pages layout
+Gallery, Services and Contacts pages have a common layout scheme, which differs from that of the front page. While the front page is dominated by the primary banner and the slogan, the other pages feature:
+* secondary banner that takes up about 25% of the viewport height (25vh) and has a fixed property to remain still when content is scrolling
+
+```width: 100%;  
+  height: 25vh;  
+  position: relative;  
+  z-index: 1;
+  background-image: url();
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%) hue-rotate(-20deg);
+  ```
+
+
+* the content block/container that is shifted up by 15vh partly overlapping the secondary banner
+  - the shift is performed by means of transform property ``transform: translateY(-15vh)``
+* the width of the content container is set to 90%  
+
+![Secondary Banner Showcase](documentation/secondary-banner-gallery-showcase.gif)
+![Secondary Banner Showcase](documentation/secondary-banner-services-showcase.gif)
 
 ### Gallery Page
 
