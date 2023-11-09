@@ -98,7 +98,8 @@ Where 2 basic effects were adopted for the site:
 ### Banner Section on the front page
 The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text contents.   
 
-```.banner-landing::before {
+```
+  .banner-landing::before {
   content: "";
   background: url() no-repeat center center/cover;
   position: absolute;
@@ -171,8 +172,8 @@ Gallery, Services and Contacts pages have a common layout scheme, which differs 
   - the shift is performed by means of transform property ``transform: translateY(-15vh)``
 * the width of the content container is set to 90%  
 
-![Secondary Banner Showcase](documentation/secondary-banner-gallery-showcase.gif)
-![Secondary Banner Showcase](documentation/secondary-banner-services-showcase.gif)
+![Secondary Banner Showcase Gallery Page](documentation/secondary-banner-gallery-showcase.gif)
+![Secondary Banner Showcase Services Page](documentation/secondary-banner-services-showcase.gif)
 
 ### Gallery Page
 
@@ -187,6 +188,92 @@ The screens with 2 or 3 columns are featured with the additional yellow backgrou
 ![Gallery Bottom background pattern](documentation/gallery-bottom-background.png)
 
 ### Services Page
+
+Besides Secondary Banner the Services page contains
+* 4 price cards with short and explicit description of the service
+* Notes to User about Pedigreat personnel and trainers
+
+Features include:
+* Icons inside the price cards - with clip-path feature
+
+~~~
+/* Shape services icons */
+.services--cards--content img {
+  width: clamp(60px, 30%, 80px);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.clip-path-shadow {
+  filter: drop-shadow(0px 2px 5px var(--COLOR-4));
+  text-align: center;
+}
+~~~
+
+![Price cards and icons](documentation/price-cards-services.png)
+
+* Standard bullets replaced by Puppy-Dog-face icons for the unordered lists of the Notes section 
+
+~~~
+.ul-special-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.ul-special-style li {
+  padding-top: 0.3rem;
+  text-indent: -1rem;
+}
+
+.ul-special-style li::before {
+  content: "🐶 ";
+  padding-left: max(0.8rem, 4vw);
+}
+
+.ul-special-style span {
+  position: relative;
+  left: 0.8rem
+}
+~~~
+
+![Notes about personnel](documentation/notes-personnel-bullets.png)
+
+
+### Contacts Page
+
+The Contacts Page contains 2 sections:
+* Contact details which are not automated at this stage of development and include invitation to
+  - dial a phone number, 
+  - send message to email, 
+  - text in WhatsApp.
+
+* Invitation card encouraging Users to become a privileged customer
+  - benefits are compiled in an unordered list with puppy-dog bullets 
+  - the card is equipped with the button link to the Customer Registration Form
+
+The Invitation card features an 'inset shadow' ``box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);``
+
+![Invitation to become privileged customer](documentation/invitation-to-register-card.png)
+
+### Customer Registration Form
+
+This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
+User is encouraged than to fill out the form
+
+![Registration Form](documentation/registration-page-pedigreat.png)
+
+This form features a focus-within property that results in changing font size and color of the input label.
+
+~~~
+.customer-registration--block>div:focus-within label {
+  color: rgb(51, 51, 160);
+  font-size: 150%;
+}
+~~~
+
+![Registration Form Focus effect](documentation/registration-form-focus.png)
+
 
 
 
