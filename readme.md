@@ -166,7 +166,7 @@ Unlike Header its position is not fixed, it is pushed down by flex-property of t
 
 The Footer contains:
 * Address block
-* 4 Social media icons, which change color on focus
+* 4 Social media icons, which change color on hover
 
 ![Footer Tablet View](documentation/footer-tablet-view.png)
 
@@ -373,7 +373,7 @@ The solution: match and set fixed font-sizes for the specific range of screens a
 
 #### __Non-media tools__
 
-* _Clamp function_
+* _Using Clamp function_
   - Set for all fonts sizes using the following selectors globally: h2,h3,h4,h5,p,label,legend. 
   - Set for font-sizes locally for inputs, buttons, links.
   - Set for the size of social media icons inside the footer.
@@ -399,4 +399,73 @@ The solution: match and set fixed font-sizes for the specific range of screens a
 }
 ~~~
 
+- 
+  - Applied to the padding of Registration Form title.
+
+~~~
+#banner-registration--text {
+  line-height: normal;
+  background-color: #f2e20597;
+  padding: max(0.5rem, 1vw) max(0.5rem, 2vw);
+  position: sticky;
+  top: 75px;
+}
+~~~ 
+
+* _Using Calc function_
+  - Set responsive surrounding padding for the registration form shadowed box.
+
+~~~
+.customer-registration {
+  width: min(100%, 1200px);
+  /* Responsive padding pattern to minimize queries */
+  padding: calc(5 * var(--vw));
+}
+~~~
+
+*
+  - Additional top and bottom padding for the registration form for the screens less 1020px
+
+~~~
+.registration--form {
+  display: flex;
+  flex-direction: column;
+  /* Responsive padding pattern to minimize queries */
+  padding-top: calc(4 * var(--vw));
+  padding-bottom: calc(3 * var(--vw));
+  border: 1px solid var(--COLOR-4);
+  box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);
+~~~
+
+*
+  - Left padding for the checkbox and radio fieldset 
+
+~~~
+.customer-registration--block fieldset {
+  padding: 1rem 1rem 1rem calc(10 * var(--vw));
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+~~~
+
+* 
+  - padding and gap properties for the navigation menu for the screens larger 765px
+
+~~~
+.nav-menu {
+    letter-spacing: normal;
+    flex: 1;
+    padding: 0 calc(4 * var(--vw)) 0 calc(1.5rem + 3 * var(--vw));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: calc(3 * var(--vw));
+  }
+~~~
+
+*
+  - some other slight re-adjustments of calc arguments for the above mentioned elements and blocks within media queries
 

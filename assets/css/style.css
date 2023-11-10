@@ -605,7 +605,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .customer-registration {
   width: min(100%, 1200px);
-  /* Responsive padding pattern to minimise quieries */
+  /* Responsive padding pattern to minimize queries */
   padding: calc(5 * var(--vw));
 }
 
