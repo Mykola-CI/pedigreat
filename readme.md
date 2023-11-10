@@ -469,3 +469,55 @@ The solution: match and set fixed font-sizes for the specific range of screens a
 *
   - some other slight re-adjustments of calc arguments for the above mentioned elements and blocks within media queries
 
+## Features Left to Implement
+
+__Customer Portal.__\
+This feature will allow customers 
+* to view and manage their account information, 
+* track their orders, 
+* and submit support tickets.  
+
+It will provide a secure and open forum for collaboration, enabling customers to access key metrics, support requests, and other relevant information.  
+The portal will also offer self-service options, allowing customers to resolve their own queries and reducing the need for real-time help via chat or calls.
+
+
+__"Tips & Paws" Blog Page.__\
+This page will host various articles and tips from professionals. It will serve as a platform for sharing valuable information and insights about pet care, pet-sitting services, and other related topics.
+
+
+__Automated Scheduling for Appointments.__\
+This feature will automate the process of scheduling appointments, making it easier for customers to book services at their convenience.\
+It will also help in managing the availability of pet sitters and ensuring efficient allocation of resources.
+
+
+__Automated Booking of Specific Service.__\
+This feature will allow customers to book specific services directly from the website. It will streamline the booking process, making it more efficient and user-friendly.
+
+
+__Electronic Payment__\
+This feature will enable customers to make payments for services electronically, providing a secure and convenient payment method. It will support various payment options to cater to the preferences of different customers.
+
+
+__ChatBot and FAQ Page__\
+The ChatBot will provide instant responses to common queries, enhancing customer service efficiency. The FAQ page will host answers to frequently asked questions, serving as a self-help resource for customers.
+
+## Technologies Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the structure and content of the site pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles to the site elements.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was of frequent use to arrange layouts on the pages.
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) - was used to make "gallery" and "contact" pages responsive.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
+- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) was used as IDE, the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website and for deployment.
+- [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
+
+## Design
+
+## Testing
+
+For the testing documentation and descriptions please refer to [TESTING.md](TESTING.md)
+
+
