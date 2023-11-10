@@ -71,17 +71,32 @@ The Main section of the Front page is divided onto 4 sections: Banner section, A
 
 ### Header and Navigation Bar
 The header takes a fixed position at the top of the screen.  
-The header contains a clickable Logo Pedigreat, which leads User to the home page. The only hover effect for logo is a cursor-pointer transformation with no focus features. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
+The header contains a clickable Logo Pedigreat, which leads User to the home page. The only hover effect for Logo __Pedigreat__ is a cursor-pointer transformation with no hover effects. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
 
-The following visual is a presentation of how header looks on tablet-size screens. There are buttons for the menu items which change the lighting pattern on focus. 
+The following visual is a presentation of how header looks on tablet-size screens. There are buttons for the menu items which change the lighting pattern on hover. 
 
 ![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
 
-The 'focus' effect in the form of animated lighting pattern delivered by means of css shadow effects:
+The 'hover' effect in the form of animated lighting pattern delivered by means of css shadow effects:
+~~~
+
+  .nav-menu>li {
+    background: #f2cb05;
+    box-shadow: -20px 20px 55px #a98e04,
+      20px -20px 55px #ffff07;
+  }
+
+  .nav-menu>li:hover {
+    background: linear-gradient(315deg, #dab705, #ffd905);
+    box-shadow: -45px -45px 64px #8a7403,
+      45px 45px 64px #ffff07;
+  }
+
+~~~
 
 * ![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
 
-The following visual is a presentation of how header looks on mobile-size screens. There is a conventional Burger Icon. 
+The following visual is a presentation of how header looks on mobile-size screens with a conventional Burger Icon. 
 
 * ![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
 
@@ -90,13 +105,23 @@ With the drop-down menu:
 * ![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
 
 Where 2 basic effects were adopted for the site: 
-- rotation of the burger icon 90º on touch
 - drop-down menu transition 1sec ease-in-out
+~~~
+nav {
+  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+~~~
+- rotation of the burger icon 90º on touch
+~~~
+#nav-toggle:checked~.nav-toggle--label {
+  transform: rotate(90deg)
+}
+~~~
 
 * ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
 
 ### Banner Section on the front page
-The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text contents.   
+The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text box elements.   
 
 ```
   .banner-landing::before {
@@ -274,12 +299,104 @@ This form features a focus-within property that results in changing font size an
 
 ![Registration Form Focus effect](documentation/registration-form-focus.png)
 
+### Response Page
+Nothing fancy on this page "to say nothing of the dog" (citation as made famous by Jerome K. Jerome in his Three Men In a Boat).\
+The page features two twin dogs with a welcoming banner. 
 
+See for yourself [Pedigreat Web-Site - Response Page](https://mykola-ci.github.io/pedigreat/response.html)
 
 
   
+### Summary of Responsive Tools Employed
 
+#### __General Media Queries__
+>_@media screen and (min-width: 765px)_
 
+This is the major query that provides for the transition from mobile to tablet devices.  
+Summary of the query as we go from small to larger screens:
+- Toggle of navigation bar from drop-down menu to linear menu form
+- Front page: transformation of About Us section to horizontal 3-column view: photo + 2 text columns
+- Front page: transformation of Service cards layout to 2 rows x 2 columns
+- Front page: transformation of Testimonials to 2 blocks in one row
+- Footer:  toggle of column view for Pedigreat address over social media icons to a one-liner
+- Gallery page: one column to two column photo gallery 
+- Services page: 
+  - Price-cards. Changing flex from column to row view with flex-wrap property set to 'wrap'.\
+The 1-column view changes to '2-column over 2-rows' view from 930px+ screens due to wrap property.
+  - Notes blocks. The 'Pet-care personnel' unordered list changes from 4 list items in 1 column to '2 column over 2 row' view.
+- Contact page: 3 communication lines of contacts with icons set from column to row view.
+- Customer-form page: Fieldset items (checkboxes and radio buttons) change from column to ``flex-wrap: wrap`` layout.     
 
+>_@media screen and (min-width: 1020px)_
+
+Summary of the query:
+- Front page: adjust the gap between service cards
+- Front page: change limitation on characters for service cards to stay within 2 column layout.   
+`` max-width: 45ch;``
+- Gallery page: transition from 2 columns to 3 column masonry of photos.  
+``column-count: 3;``
+- Registration-form page: setting the form to 2 column view by adjusting flex properties.
+
+>_@media screen and (min-width: 1600px)_
+
+Summary of the query:
+- Services Page: ensure all 4 price cards lays in 1 row for all screens by setting flex-wrap property to nowrap value.
+- Services Page: change 2 blocks of notes, namely Pet_care personnel and Trainers, from column layout to the horizontal, row layout. 
+
+#### __Special Media Queries__
+
+>_@media screen and (min-width: 380px) and (max-width: 1020px)_ 
+
+* Registration form.\
+Trigger padding for the input fields to increase as from smaller screens (380px) to the point where the form changes its layout (1020px) from 1 column to 2 columns.   
+
+>_@media screen and (min-width: 1380px) and (max-width: 1600px)_
+
+* Services Page.\
+Manages price cards to remain in 2 x 2 layout in (4 cards in 2 rows).
+The parent container is forced to smaller width in order to prevent from flex 'wrap' property to exercise undesirable layout of 3 cards in 1 row and only 1 card in the second row.\
+The effect becomes unnecessary at the point of 1600px when the cards must be laid out all 4 in 1 row.
+
+ ~~~
+  .services--cards {
+    max-width: 1000px;
+    gap: 2rem
+  }
+  ~~~
+ 
+>_@media only screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape)_
+
+* Manages layout of the front page banner and the slogan.\
+The tests on mobiles revealed the problem of text overflow in landscape mode. In addition, the banner was not observable in the screen in its entirety.\
+The reason: responsive text sizes as a function from viewport width.\
+The solution: match and set fixed font-sizes for the specific range of screens and orientation mode.  
+
+#### __Non-media tools__
+
+* _Clamp function_
+  - Set for all fonts sizes using the following selectors globally: h2,h3,h4,h5,p,label,legend. 
+  - Set for font-sizes locally for inputs, buttons, links.
+  - Set for the size of social media icons inside the footer.
+  - Applied to width of price cards on service page.
+  - Applied to padding for the Notes items on the service page.
+  - Applied to padding-left for address item inside footer for the screens above 760px.
+
+* _Maximum of 2 values in combination with viewport units_
+  - Applied to the main banner height to grow with screen height and to prevent from overflow in landscape mode. ``height: max(320px, 75vh);`` 
+  - Applied to the left padding of the price cards content to expand with the viewport size.
+
+~~~
+.services-details h2 {
+  padding: 2rem max(0.5rem, 5vw);
+  text-align: center;
+}
+~~~
+
+~~~
+.services--cards--content {
+  max-width: 400px;
+  padding: 1rem max(0.5rem, 2vw);
+}
+~~~
 
 

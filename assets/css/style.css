@@ -636,7 +636,7 @@ to control image filters w/o affecting the headings and paragraphs */
 .registration--form {
   display: flex;
   flex-direction: column;
-  /* Responsive padding pattern to minimise quieries */
+  /* Responsive padding pattern to minimize queries */
   padding-top: calc(4 * var(--vw));
   padding-bottom: calc(3 * var(--vw));
   border: 1px solid var(--COLOR-4);
@@ -824,10 +824,6 @@ footer p {
       45px 45px 64px #ffff07;
   }
 
-  .nav-menu>li:hover {
-    background-color: var(--COLOR-1);
-  }
-
   /* Main sections of the landing page */
 
   .about-us {
@@ -958,7 +954,7 @@ footer p {
     max-width: 45ch;
   }
 
-  /* Adjust left spacing for large screens - addres in footer */
+  /* Adjust left spacing for large screens - address in footer */
   .footer-address {
     padding-left: 3.5rem;
   }
