@@ -12,24 +12,30 @@ The site can be accessed at the following link  [Pedigreat Web-Site](https://myk
 ![Pedigreat Responsive Web-Mockup](documentation/screenshots/3-devices-black-resized.png "The image of mobile, tablet and desktop with the Web-site Mockup on screens")
 
 --------
-## User Stories
+## User Stories 
 ### First-time Users:
 * _As a first-time user_, I want to easily understand the services offered by the pet-sitting website so that I can decide if it meets my needs.
 * _As a first-time user_, I want to see testimonials from other pet owners who have used the pet-sitting service so that I can trust the quality of the service.
 ### Returning Users:
 * _As a returning user_, I want to quickly access my account and view my pet-sitting bookings so that I can manage my reservations.
-* _As a returning user_, I want to receive notifications about upcoming pet-sitting appointments so that I can prepare my pet and coordinate with the pet sitter.
+* _As a returning user_, I want to receive notifications about upcoming pet-sitting appointments so that I can prepare my pet and coordinate with the pet sitter.\
+_Note_: These are __future user stories__, [refer to the Features Left to Implement](#features-left-to-implement).   
+Existing features assume person-to-person contacts and direct messaging.  
 ### Frequent Users:
 * _As a frequent user_, I want to earn rewards or discounts for using the pet-sitting service regularly so that I feel valued as a loyal customer.
 * _As a frequent user_, I want to have a personalized experience on the website, such as seeing my favorite pet sitters or tailored service recommendations, so that I can quickly find and book the services I need.
+_Note_: Rewards, discounts and promotions are exercised at this stage through the newsletter and direct messages once the User fills out the existing Registration Form.\
+For the nex development [refer to the Features Left to Implement](#features-left-to-implement) 
 ### As a Pet Owner In General
 * _As a pet owner_, I want to be able to easily find and book a pet sitter so that my pet is cared for when I am away.
 * _As a pet owner_, I want to be able to read reviews about pet sitters so that I can choose a sitter I trust.
 * _As a pet owner_, I want to be able to communicate with the pet sitter about my pet's needs so they are properly cared for.
-* _As a pet owner_, I want to be able to pay conveniently and securely so I don't have to worry about payments.
+* _As a pet owner_, I want to be able to pay conveniently and securely so I don't have to worry about payments.\
+_Note_: All communications with pet-sitters and administration and the related user stories are currently accomplished by e-mail, texting or phone calls.\
+For further development please [refer to the Features Left to Implement](#features-left-to-implement)    
 _________
 ### Comments On User Stories
-Technically the web-site is supposed to employ html & css tools only at the first stage of its development. The business model is adjusted to provide its functionality without undertaking complex back-end software that would manage the automation of scheduling, booking, billing, chatbot etc. That is why the business model and eventually its web-site assumes, at least for now, human-to-human contacts only when making appointments and booking services.
+Technically the web-site is supposed to employ html & css tools only at the first stage of its development. The business model is adjusted to provide its functionality without undertaking complex back-end software that would manage the automation of scheduling, booking, billing, chatbot etc. That is why the business model and eventually its web-site assumes, at least for now, person-to-person contacts only when making appointments and booking services.
 
 Yet the registration form will appear on one of the pages because Pedigreat offers promotions and cross-promotions, as well as email newsletters for the registered clients. Many of users' wants can be met in the newsletter communication and a relevant event marketing.
 
@@ -470,6 +476,7 @@ The solution: match and set fixed font-sizes for the specific range of screens a
   - some other slight re-adjustments of calc arguments for the above mentioned elements and blocks within media queries
 
 ## Features Left to Implement
+[Back to User Stories](#user-stories)
 
 __Customer Portal.__\
 This feature will allow customers 
@@ -506,7 +513,6 @@ The ChatBot will provide instant responses to common queries, enhancing customer
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the structure and content of the site pages.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles to the site elements.
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was of frequent use to arrange layouts on the pages.
-- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) - was used to make "gallery" and "contact" pages responsive.
 - [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
 - [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
 - [VSCode](https://code.visualstudio.com/) was used as IDE, the main tool to write and edit code.
@@ -515,6 +521,35 @@ The ChatBot will provide instant responses to common queries, enhancing customer
 - [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
 
 ## Design
+
+### Color Palette
+
+The colours adopted for the project Pedigreat were inspired by the trending palette as made public by [Adobe Color](https://color.adobe.com/trends) .\
+This palette can be found at [Adobe Trends - Postane palette](https://color.adobe.com/search?q=postane)
+
+![The Palette Postane as from Adobe](documentation/design/Colors%20Adobe%20Palette%202023-11-06.png)
+
+Further search on the palette origin and its authors has lead to the following site [Fol Studio Turkey](https://fol.com.tr/works/postane/).\
+According to the authors, Fol Studio, they created the identity of Postane, which is a place in Istanbul that aims to host social, environmental and urban impact-oriented works and joint cultural productions. The place is located in the historical building known as the British Post Office [Postane](www.postane.co).
+
+The Palette for the Pedigreat project was augmented with the color 4 from original Fol Studio Palette and the  Color 5  adjusted to provide for the contrast of font color.\
+The Palette has a unique symbiosis of traditional and somewhat archaic warm tones with a modern urban touch, which is so appropriate to the Berkshire moods and lifestyles nowadays.      
+
+![The Postane for Pedigreat](documentation/design/Colors%20pedigreat%202023-11-06.png)
+
+| Color Type |   Used for  |
+| -------- | -------- |
+| Color 1   | For the Headings h1, h2, h3, h4, h5 |
+| Color 2   | For the Background Color of Gallery and Drop Down Menu block |
+| Color 3  |  For the Background Color of the Header and Navigation Bar |
+| Color 4 | For the Background Color of the Footer |
+| Color 5 | For the Font Color of the entire Body and Input elements |
+
+## Typography
+
+![Oswald Family](documentation/design/oswald-sample.png)
+
+![Quattrocento Family](documentation/design/quattrocento-sample.png)
 
 ## Testing
 
