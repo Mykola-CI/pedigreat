@@ -25,7 +25,7 @@ Existing features assume person-to-person contacts and direct messaging.
 * _As a frequent user_, I want to earn rewards or discounts for using the pet-sitting service regularly so that I feel valued as a loyal customer.
 * _As a frequent user_, I want to have a personalized experience on the website, such as seeing my favorite pet sitters or tailored service recommendations, so that I can quickly find and book the services I need.
 _Note_: Rewards, discounts and promotions are exercised at this stage through the newsletter and direct messages once the User fills out the existing Registration Form.\
-For the nex development [refer to the Features Left to Implement](#features-left-to-implement) 
+For the next development [refer to the Features Left to Implement](#features-left-to-implement) 
 ### As a Pet Owner In General
 * _As a pet owner_, I want to be able to easily find and book a pet sitter so that my pet is cared for when I am away.
 * _As a pet owner_, I want to be able to read reviews about pet sitters so that I can choose a sitter I trust.
@@ -39,8 +39,20 @@ Technically the web-site is supposed to employ html & css tools only at the firs
 
 Yet the registration form will appear on one of the pages because Pedigreat offers promotions and cross-promotions, as well as email newsletters for the registered clients. Many of users' wants can be met in the newsletter communication and a relevant event marketing.
 
-## Global functionality and navigation
-The first user's hit will be the landing page and the banner. It is equipped with 
+
+## Existing Features
+There are 6 pages in total at present:
+1. Home 
+2. Gallery 
+3. Services 
+4. Contacts 
+5. Customer Registration Form
+6. Response
+
+Each page is divided onto 3 global sections: Header, Main Content and Footer.
+
+### Global functionality and navigation
+The first User's hit will be the Landing page and the Banner. It is equipped with 
 * Header with logo and navigation bar 
 * Main Slogan followed by the button "Book Now" and the Themed Banner at the Background  
 
@@ -48,42 +60,246 @@ See the site navigation scheme in pdf: [Site Navigation Scheme](documentation/na
 
 ![Navigation Scheme Screen](documentation/navigation-scheme-screen.png "Navigation Scheme Screen")
 
-Navigation is provided by the following buttons within the navigation bar:
-* Home (Landing Page)
-* Gallery (Photo gallery)
-* Services (description of Services and price cards)
-* Contacts: 
-    - Contact details for booking and any communication 
-    - Invitation to join Community and Loyalty program
+Navigation is provided by the following menu within the navigation bar:
+* Home (Takes User to the Home or Landing Page)
+* Gallery (Takes User to the Photo gallery)
+* Services (Takes User to the description of Services and price cards)
+* Contacts (Takes User to the Contact Page) 
 
-The 'Home' Page contains a button-link to the 'Contacts' Page.
+The 'Home' Page contains a button-link to the 'Contacts' Page as an additional tool to get to the Contact Page.
 
    ![Book Now button under the Slogan](documentation/book-now-button.png)
 
-'Home' Page also contains Learn More Links that lead to the Services Page
+Within the About Us and Service descriptions sections 'Home' Page also contains Learn More Links that lead to the Services Page
 
    ![Learn More link visual](documentation/learn-more-presentation.png)
 
-The 'Contacts' Page contains the Invitation to fill out the Form and a Button encouraging to jump to the "Customer Registration Form".
+The 'Contacts' Page contains the Invitation to fill out the Form and a Button encouraging to jump to the Customer registration Form.
 
    ![Invitation to Register Button](documentation/invitation-to-register.png)
 
+If User opts to fill out the registration form he or she hits the Button and gets to [Customer Registration Form](#customer-registration-form).
 
-Once the Form has been submitted User will get into the 'Response' Page as shown in the Site Mapping diagram above.
 
-## Existing Features
-The page is divided onto 3 global sections: Header, Main and Footer.   
-The Main section of the Front page is divided onto 4 sections: Banner section, About Us, Services and Testimonials
+Once the Form is completed User will get to a [Response Page](#response-page).
 
 ### Header and Navigation Bar
-The header takes a fixed position at the top of the screen.  
-The header contains a clickable Logo Pedigreat, which leads User to the home page. The only hover effect for Logo __Pedigreat__ is a cursor-pointer transformation with no hover effects. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
 
-The following visual is a presentation of how header looks on tablet-size screens. There are buttons for the menu items which change the lighting pattern on hover. 
+* The Header takes a fixed position at the top of the screen and available through all 6 pages.  
+* The Header contains a clickable Logo Pedigreat, which leads User to the Home page from every other page.
+* The Header includes the menu of links to 4 pages (Home, Gallery, Services and Contacts). 
+  - _Note_: The access to the Customer Registration Form and the Response Page is granted only in case User opts to register in Pedigreat databases.
+* The Header and Navigation Bar is fully responsive so User can navigate easily across all devices:
+  - Tablets, Laptops and Desktops in the form of the lighted buttons  
 
 ![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
 
-The 'hover' effect in the form of animated lighting pattern delivered by means of css shadow effects:
+Which change the lighting pattern on hover 
+
+![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
+
+*
+  - Mobiles with a conventional Burger Icon 
+
+![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
+
+and the drop-down menu:
+
+![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
+
+with rotating burger icon on touch:
+
+![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
+
+* Such organization of the Header and Navigation Bar provides for smooth User's navigation from page to page without undertaking backward sequences. 
+
+### Home page
+#### Landing Page and Primary Banner 
+The Banner Section becomes a __Landing page__ for the User being the first visible part of the Home Page. 
+The Banner Section or The landing Page consist of: 
+* a photograph of pet-sitters and multiple dog-walking suggesting User the type of activities
+* a Text Slogan overlaid in foreground gives User information of the type of service offered and a location it is applicable to
+* a Link-button "__Book Now__" encouraging User to proceed with booking  
+</br>
+
+
+  ![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
+
+</br>
+
+The banner itself takes about 75% of the viewport height just enough to reveal a part of the next section __About Us__.  
+User can see that scrolling further down is going to provide more information.
+
+
+#### About Us and Services sections on the Home page
+* __About Us__ section tells User a few words about the Pedigreat team, its professional knowledge and dedication. The section consists of  
+  * 2 text blocks and 
+  * the collage of portrait photos of the Pedigreat personnel.
+
+The About Us section is followed by the brief descriptions of 4 distinct types of services in offer.
+* User will understand the scope of services to differentiate one from another
+  * Daily Dog Walking
+  * Vacation Home Visits
+  * Second Home Boarding
+  * Dog Training Sessions
+* User will be encouraged to learn more by hitting the Learn More links
+
+</br>
+
+  ![About Us - Mobile view](documentation/mobile-about-us.png) ![Service Descriptions - Mobile view](documentation/mobile-service-intro.png)
+
+#### Testimonials section on the Home page
+This section is featured with 2 testimonials, which organized as 2 cards. User will see and get familiar with
+* the photo of a pet-owner, 
+* name,
+* occupation 
+* and the pet-owner's story
+
+</br>
+
+  ![Testimonials combined with Service cards - Tablet view](documentation/testimonials-section-tablet.png)
+
+### Footer
+The Footer is a global element which is repeated across all the pages in the similar manner as the Header.
+Unlike the Header its position is not fixed, it is pushed down by Main Content of each page.
+
+User can see:
+* Address of Pedigreat Pets company
+* 4 Social media icons that serve as clickable links to the respective media blogs supported by Pedigreat
+
+![Footer Tablet View](documentation/footer-tablet-view.png)
+
+![Footer Mobile View](documentation/footer-mobile-view.png)
+
+The social media icons change color on hover:
+
+![Hover effect on media icons](documentation/media-icons-hover.gif)
+
+### Gallery Page
+User can see
+* that the Pedigreat has a wide array of clients,
+* pet-sitters and pet-owners indulged with their furry friends and beaming with emotions,  
+* breathtaking local landscapes showing possible playgrounds.
+
+This common and valuable element in almost every site is organized in simple and nice masonry style.   
+Live and dynamic view without gaps and borders gives a touch of reality and dynamic nature.    
+Photos are laid out:
+* in one column for mobiles
+* 2 columns for the screens larger than 765px
+* 3 columns for the screens larger than 1020px
+
+The screens with 2 or 3 columns are featured with the additional yellow background from the adopted color scheme.   
+This feature is applied in order to rectify suspended and unfinished graphics of the bottom part of the masonry.
+
+![Gallery Bottom background pattern](documentation/gallery-bottom-background.png)
+
+### Services Page
+
+The Services page provides useful and practical information for User.
+
+![Services](documentation/services-page-pedigreat.png)
+
+* 4 price cards with
+   * vivid and cute Icons, supporting the subject service, 
+   * detail of the service required for Users's knowledge before he or she picks and books,
+   * a button-link to the Contacts Page,
+   * the most important - the indicative price at a basic scope of service. 
+
+![Price cards and icons](documentation/price-cards-services.png)
+
+* Notes to User about Pedigreat personnel and trainers
+   * to show professional qualities of the Pedigreat administration
+   * care for reputation by providing high safety and security standards for their Clients
+
+![Notes about personnel](documentation/notes-personnel-bullets.png)
+
+
+### Contacts Page
+This is a go-to-action Page. User will be given details of contact and channels of communication.
+
+![Contacts](documentation/contact-page-pedigreat.png)
+
+The Contacts Page contains 2 sections:
+* Contact details which are not automated at this stage of development and include invitation to
+  - dial a phone number, 
+  - send message to email, 
+  - text in WhatsApp.
+
+* Invitation card encouraging Users to become a privileged customer
+  - benefits are explicit and attractive for User 
+  - the card is equipped with the button link to the Customer Registration Form
+
+![Invitation to become privileged customer](documentation/invitation-to-register-card.png)
+
+### Customer Registration Form
+[Back to Existing Features](#existing-features)
+
+This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
+User is encouraged than to fill out the form
+
+![Registration Form](documentation/registration-page-pedigreat.png)
+
+This form features change of font size and color of the input border and label when in focus.
+
+![Registration Form Focus effect](documentation/registration-form-focus.png)
+
+### Response Page
+[Back to Existing Features](#existing-features)
+
+Nothing fancy on this page "to say nothing of the dog" (citation as made famous by Jerome K. Jerome in his Three Men In a Boat).\
+The page features two twin dogs with a welcoming banner for a User who took time to fill out the form. 
+
+See for yourself [Pedigreat Web-Site - Response Page](https://mykola-ci.github.io/pedigreat/response.html)
+
+
+## Features Left to Implement
+[Back to User Stories](#user-stories)
+
+__Customer Portal.__\
+This feature will allow customers 
+* to view and manage their account information, 
+* track their orders, 
+* and submit support tickets.  
+
+It will provide a secure and open forum for collaboration, enabling customers to access key metrics, support requests, and other relevant information.  
+The portal will also offer self-service options, allowing customers to resolve their own queries and reducing the need for real-time help via chat or calls.
+
+
+__"Tips & Paws" Blog Page.__\
+This page will host various articles and tips from professionals. It will serve as a platform for sharing valuable information and insights about pet care, pet-sitting services, and other related topics.
+
+
+__Automated Scheduling for Appointments.__\
+This feature will automate the process of scheduling appointments, making it easier for customers to book services at their convenience.\
+It will also help in managing the availability of pet sitters and ensuring efficient allocation of resources.
+
+
+__Automated Booking of Specific Service.__\
+This feature will allow customers to book specific services directly from the website. It will streamline the booking process, making it more efficient and user-friendly.
+
+
+__Electronic Payment__\
+This feature will enable customers to make payments for services electronically, providing a secure and convenient payment method. It will support various payment options to cater to the preferences of different customers.
+
+
+__ChatBot and FAQ Page__\
+The ChatBot will provide instant responses to common queries, enhancing customer service efficiency. The FAQ page will host answers to frequently asked questions, serving as a self-help resource for customers.
+
+## Technologies Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the structure and content of the site pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles to the site elements.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was of frequent use to arrange layouts on the pages.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
+- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) was used as IDE, the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website and for deployment.
+- [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
+
+ . The only hover effect for Logo __Pedigreat__ is a cursor-pointer transformation with no other hover effects. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
+
+ The 'hover' effect in the form of animated lighting pattern delivered by means of css shadow effects:
 ~~~
 
   .nav-menu>li {
@@ -100,15 +316,7 @@ The 'hover' effect in the form of animated lighting pattern delivered by means o
 
 ~~~
 
-* ![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
 
-The following visual is a presentation of how header looks on mobile-size screens with a conventional Burger Icon. 
-
-* ![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
-
-With the drop-down menu:
-
-* ![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
 
 Where 2 basic effects were adopted for the site: 
 - drop-down menu transition 1sec ease-in-out
@@ -124,9 +332,6 @@ nav {
 }
 ~~~
 
-* ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
-
-### Banner Section on the front page
 The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text box elements.   
 
 ```
@@ -144,45 +349,14 @@ The Banner on the front Page is arranged as a '::before' pseudo-class element in
 ```
 At the same time the text slogan has the background of its own to provide for the required contrast, its opacity helping retain consistency throughout the major banner 
 
-  ![Front Page banner - mobile and laptop views](documentation/banner-mobile-tablet-views.png)
-
-The banner itself takes about 75% of the viewport height just enough to reveal a part of the next section - About Us.
-
-### About Us and Services sections on the front page
-About Us section tells User a few words about the Pedigreat team and its dedication, which is followed by the brief descriptions of 4 distinct types of services in offer.
-* The About Us block consists of h3 heading, 2 text blocks and the image of collage portraits photos.
-* The Service Descriptions block consists of 4 text cards with elegant curvy borders and smooth shadowing.
 Both sections as well as the following Testimonials section are made coherent with the small left and right margins. Technically, this is attained by means of width 95% of their parent, max-width 400px (for responsive design at larger widths) and flex-centered layout.  
 
-  ![About Us - Mobile view](documentation/mobile-about-us.png) ![Service Descriptions - Mobile view](documentation/mobile-service-intro.png)
-
-### Testimonials section on the front page
-This section is featured with 2 testimonials, which organized 
-* as 2 cards with the photo of a pet-owner, name, occupation and the story
 * each placed in a container with a thin border and smooth shadowing
 * images are placed at the top left with the properties 
   - float: left and 
   - width: min(20%, 100px) 
 
-  ![Testimonials combined with Service cards - Tablet view](documentation/testimonials-section-tablet.png)
-
-### Footer
-Footer is the global element which is repeated across all the pages in the similar manner as Header.
-Unlike Header its position is not fixed, it is pushed down by flex-property of the Main section: flex: 1 0 auto;.
-
-The Footer contains:
-* Address block
-* 4 Social media icons, which change color on hover
-
-![Footer Tablet View](documentation/footer-tablet-view.png)
-
-![Footer Tablet View](documentation/footer-mobile-view.png)
-
-The social media icons change color on hover:
-
-![Hover effect on media icons](documentation/media-icons-hover.gif)
-
-### Secondary banner and the other pages layout
+   __Secondary banner and the other pages layout__
 Gallery, Services and Contacts pages have a common layout scheme, which differs from that of the front page. While the front page is dominated by the primary banner and the slogan, the other pages feature:
 * secondary banner that takes up about 25% of the viewport height (25vh) and has a fixed property to remain still when content is scrolling
 
@@ -206,24 +380,6 @@ Gallery, Services and Contacts pages have a common layout scheme, which differs 
 ![Secondary Banner Showcase Gallery Page](documentation/secondary-banner-gallery-showcase.gif)
 ![Secondary Banner Showcase Services Page](documentation/secondary-banner-services-showcase.gif)
 
-### Gallery Page
-
-This common element in almost every site is organized in simple and nice masonry style. Live and dynamic view without gaps and borders gives a touch of reality.  
-Photos are laid out with a 'column' property.
-* default one column for mobiles
-* column-count: 2 for the screens larger than 765px
-* column-count: 3 for the screens larger than 1020px
-
-The screens with 2 or 3 columns are featured with the additional yellow background from the adopted color scheme. This feature is applied in order to rectify suspended and unfinished graphics of the bottom part of the masonry.
-
-![Gallery Bottom background pattern](documentation/gallery-bottom-background.png)
-
-### Services Page
-
-Besides Secondary Banner the Services page contains
-* 4 price cards with short and explicit description of the service
-* Notes to User about Pedigreat personnel and trainers
-
 Features include:
 * Icons inside the price cards - with clip-path feature
 
@@ -239,8 +395,6 @@ Features include:
   text-align: center;
 }
 ~~~
-
-![Price cards and icons](documentation/price-cards-services.png)
 
 * Standard bullets replaced by Puppy-Dog-face icons for the unordered lists of the Notes section 
 
@@ -267,32 +421,7 @@ Features include:
   left: 0.8rem
 }
 ~~~
-
-![Notes about personnel](documentation/notes-personnel-bullets.png)
-
-
-### Contacts Page
-
-The Contacts Page contains 2 sections:
-* Contact details which are not automated at this stage of development and include invitation to
-  - dial a phone number, 
-  - send message to email, 
-  - text in WhatsApp.
-
-* Invitation card encouraging Users to become a privileged customer
-  - benefits are compiled in an unordered list with puppy-dog bullets 
-  - the card is equipped with the button link to the Customer Registration Form
-
 The Invitation card features an 'inset shadow' ``box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);``
-
-![Invitation to become privileged customer](documentation/invitation-to-register-card.png)
-
-### Customer Registration Form
-
-This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
-User is encouraged than to fill out the form
-
-![Registration Form](documentation/registration-page-pedigreat.png)
 
 This form features a focus-within property that results in changing font size and color of the input label.
 
@@ -303,16 +432,6 @@ This form features a focus-within property that results in changing font size an
 }
 ~~~
 
-![Registration Form Focus effect](documentation/registration-form-focus.png)
-
-### Response Page
-Nothing fancy on this page "to say nothing of the dog" (citation as made famous by Jerome K. Jerome in his Three Men In a Boat).\
-The page features two twin dogs with a welcoming banner. 
-
-See for yourself [Pedigreat Web-Site - Response Page](https://mykola-ci.github.io/pedigreat/response.html)
-
-
-  
 ### Summary of Responsive Tools Employed
 
 #### __General Media Queries__
@@ -441,6 +560,7 @@ The solution: match and set fixed font-sizes for the specific range of screens a
   padding-bottom: calc(3 * var(--vw));
   border: 1px solid var(--COLOR-4);
   box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);
+}
 ~~~
 
 *
@@ -475,50 +595,7 @@ The solution: match and set fixed font-sizes for the specific range of screens a
 *
   - some other slight re-adjustments of calc arguments for the above mentioned elements and blocks within media queries
 
-## Features Left to Implement
-[Back to User Stories](#user-stories)
 
-__Customer Portal.__\
-This feature will allow customers 
-* to view and manage their account information, 
-* track their orders, 
-* and submit support tickets.  
-
-It will provide a secure and open forum for collaboration, enabling customers to access key metrics, support requests, and other relevant information.  
-The portal will also offer self-service options, allowing customers to resolve their own queries and reducing the need for real-time help via chat or calls.
-
-
-__"Tips & Paws" Blog Page.__\
-This page will host various articles and tips from professionals. It will serve as a platform for sharing valuable information and insights about pet care, pet-sitting services, and other related topics.
-
-
-__Automated Scheduling for Appointments.__\
-This feature will automate the process of scheduling appointments, making it easier for customers to book services at their convenience.\
-It will also help in managing the availability of pet sitters and ensuring efficient allocation of resources.
-
-
-__Automated Booking of Specific Service.__\
-This feature will allow customers to book specific services directly from the website. It will streamline the booking process, making it more efficient and user-friendly.
-
-
-__Electronic Payment__\
-This feature will enable customers to make payments for services electronically, providing a secure and convenient payment method. It will support various payment options to cater to the preferences of different customers.
-
-
-__ChatBot and FAQ Page__\
-The ChatBot will provide instant responses to common queries, enhancing customer service efficiency. The FAQ page will host answers to frequently asked questions, serving as a self-help resource for customers.
-
-## Technologies Used
-
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the structure and content of the site pages.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles to the site elements.
-- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was of frequent use to arrange layouts on the pages.
-- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
-- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
-- [VSCode](https://code.visualstudio.com/) was used as IDE, the main tool to write and edit code.
-- [Git](https://git-scm.com/) was used for the version control of the website.
-- [GitHub](https://github.com/) was used to host the code of the website and for deployment.
-- [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
 
 ## Design
 
@@ -545,7 +622,7 @@ The Palette has a unique symbiosis of traditional and somewhat archaic warm tone
 | Color 4 | For the Background Color of the Footer |
 | Color 5 | For the Font Color of the entire Body and Input elements |
 
-## Typography
+### Typography
 
 ![Oswald Family](documentation/design/oswald-sample.png)
 
