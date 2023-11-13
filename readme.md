@@ -216,7 +216,7 @@ The Services page provides useful and practical information for User.
    * professional qualities of the Pedigreat administration in selecting personnel
    * care for reputation by providing high safety and security standards for their Clients
 
-![Notes about personnel](documentation/notes-personnel-bullets.png)
+![Notes about personnel](documentation/notes-about-personnel.png)
 
 
 ### Contacts Page
@@ -387,7 +387,7 @@ The images for the Pedigreat Web-Site were taken from [Unsplash](https://unsplas
 The main banner image was taken from [iStock](https://www.istockphoto.com/)
 
 * __Home Page__
-   - [Main Banner](https://www.istockphoto.com/photo/group-of-dog-walkers-working-together-gm1345672917-423673247)
+   - [Primary Banner](https://www.istockphoto.com/photo/group-of-dog-walkers-working-together-gm1345672917-423673247)
    - [Collage of Pedigreat Personnel](https://depositphotos.com/photo/collage-photos-happy-attractive-people-white-background-576061626.html)
    - [Testimonial Hero 1](https://unsplash.com/photos/woman-wearing-brown-and-black-plaid-dress-shirt-smiling-white-taking-picture-2oLBwyl80QY) 
    - [Testimonial Hero 2](https://unsplash.com/photos/bearded-man-taking-a-selfie-kMJp7620W6U)
@@ -410,7 +410,16 @@ The main banner image was taken from [iStock](https://www.istockphoto.com/)
   - Photo 15 - kindly granted by a friend
   - [Photo 16](https://unsplash.com/photos/woman-carrying-long-coated-white-dog-near-green-leafed-plants-HNCX1RT1qRk)
 
+* __Secondary Banner__ on the other pages
+  - [Panorama With Meadow Flowers](https://depositphotos.com/photo/poppy-field-panorama-in-spring-82869122.html)
 
+## Acknowledgements
+
+* [Code Institute](https://codeinstitute.net/): tutors and Slack community members for their support and help.
+* [Iuliia Konovalova](https://github.com/IuliiaKonovalova): the assigned __Mentor__ for being resourceful in many of my  breakthroughs along the project. 
+* Inna Selivan: my close friend and a neighbor for letting me practice as a volunteer pet-sitter with her agile spaniel Zizzu and for granting the photos.
+* Zizzu: very smart spaniel who gave me so many happy moments in the meadows of Berkshire.
+* [Kevin Powell](https://www.youtube.com/user/KepowOb) for his remarkable CSS tutorials. 
 
 
 
