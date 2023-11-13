@@ -9,7 +9,7 @@ In contrast to the existing Uber-like large nets of amateur pet-sitters or big c
 To facilitate the main business objectives the Pedigreat team has launched a front-end web-site as a first stage of its further development.   
 The site can be accessed at the following link  [Pedigreat Web-Site](https://mykola-ci.github.io/pedigreat/index.html)
 
-![Pedigreat Responsive Web-Mockup](documentation/screenshots/3-devices-black-resized.png "The image of mobile, tablet and desktop with the Web-site Mockup on screens")
+![Pedigreat Responsive Web-Mockup](documentation/mockups/all-devices-black.png "The image of mobile, tablet and desktop with the Web-site Mockup on screens")
 
 --------
 ## User Stories 
@@ -56,9 +56,9 @@ The first User's hit will be the Landing page and the Banner. It is equipped wit
 * Header with logo and navigation bar 
 * Main Slogan followed by the button "Book Now" and the Themed Banner at the Background  
 
-See the site navigation scheme in pdf: [Site Navigation Scheme](documentation/navigation-pedigreat.pdf)
+See the site navigation scheme in pdf: [Site Navigation Scheme](documentation/wireframes/navigation-pedigreat.pdf)
 
-![Navigation Scheme Screen](documentation/navigation-scheme-screen.png "Navigation Scheme Screen")
+![Navigation Scheme Screen](documentation/navigation-scheme-pedigreat.png "Navigation Scheme Screen")
 
 Navigation is provided by the following menu within the navigation bar:
 * Home (Takes User to the Home or Landing Page)
@@ -90,7 +90,7 @@ Once the Form is completed User will get to a [Response Page](#response-page).
 * The Header includes the menu of links to 4 pages (Home, Gallery, Services and Contacts). 
   - _Note_: The access to the Customer Registration Form and the Response Page is granted only in case User opts to register in Pedigreat databases.
 * The Header and Navigation Bar is fully responsive so User can navigate easily across all devices:
-  - Tablets, Laptops and Desktops in the form of the lighted buttons  
+  - layout for Tablets, Laptops and Desktops is arranged in the form of the lighted buttons  
 
 ![Header and Navigation Bar for larger screens](documentation/nav-bar-tablets.png)
 
@@ -99,7 +99,7 @@ Which change the lighting pattern on hover
 ![Presentation of focus effect on menu buttons](documentation/buttons-navbar-focus.gif)
 
 *
-  - Mobiles with a conventional Burger Icon 
+  - layout for Mobiles goes with a conventional Burger Icon 
 
 ![Header and Nav-bar with burger icon for smaller screens](documentation/nav-bar-burger-icon.png)
 
@@ -107,7 +107,7 @@ and the drop-down menu:
 
 ![Header and Navigation Bar drop-down menu for smaller screens](documentation/nav-bar-drop-down.png)
 
-with rotating burger icon on touch:
+Burger icon rotating  on touch:
 
 ![Presentation of rotating burger icon](documentation/rotating-burger-icon.gif)
 
@@ -116,7 +116,7 @@ with rotating burger icon on touch:
 ### Home page
 #### Landing Page and Primary Banner 
 The Banner Section becomes a __Landing page__ for the User being the first visible part of the Home Page. 
-The Banner Section or The landing Page consist of: 
+The Banner Section or the Landing Page consist of: 
 * a photograph of pet-sitters and multiple dog-walking suggesting User the type of activities
 * a Text Slogan overlaid in foreground gives User information of the type of service offered and a location it is applicable to
 * a Link-button "__Book Now__" encouraging User to proceed with booking  
@@ -142,6 +142,8 @@ The About Us section is followed by the brief descriptions of 4 distinct types o
   * Vacation Home Visits
   * Second Home Boarding
   * Dog Training Sessions
+
+
 * User will be encouraged to learn more by hitting the Learn More links
 
 </br>
@@ -149,7 +151,7 @@ The About Us section is followed by the brief descriptions of 4 distinct types o
   ![About Us - Mobile view](documentation/mobile-about-us.png) ![Service Descriptions - Mobile view](documentation/mobile-service-intro.png)
 
 #### Testimonials section on the Home page
-This section is featured with 2 testimonials, which organized as 2 cards. User will see and get familiar with
+This section is featured with 2 testimonials organized as cards. User will see and get familiar with
 * the photo of a pet-owner, 
 * name,
 * occupation 
@@ -181,6 +183,8 @@ User can see
 * pet-sitters and pet-owners indulged with their furry friends and beaming with emotions,  
 * breathtaking local landscapes showing possible playgrounds.
 
+![Secondary Banner Showcase Gallery Page](documentation/secondary-banner-gallery-showcase.gif)
+
 This common and valuable element in almost every site is organized in simple and nice masonry style.   
 Live and dynamic view without gaps and borders gives a touch of reality and dynamic nature.    
 Photos are laid out:
@@ -198,17 +202,18 @@ This feature is applied in order to rectify suspended and unfinished graphics of
 The Services page provides useful and practical information for User.
 
 ![Services](documentation/services-page-pedigreat.png)
+![Secondary Banner Showcase Services Page](documentation/secondary-banner-services-showcase.gif)
 
-* 4 price cards with
-   * vivid and cute Icons, supporting the subject service, 
-   * detail of the service required for Users's knowledge before he or she picks and books,
-   * a button-link to the Contacts Page,
-   * the most important - the indicative price at a basic scope of service. 
+* The main elements of the page are 4 price cards with
+   * vivid and cute Icons, as a supporting visual for the specific service, 
+   * detail of the service described in simple and straightforward style, that will aid to Users's knowledge before he or she picks and books,
+   * a button-link to the Contacts Page to make an appointment or booking,
+   * and the most important for User - the indicative price at a basic scope of service. 
 
 ![Price cards and icons](documentation/price-cards-services.png)
 
-* Notes to User about Pedigreat personnel and trainers
-   * to show professional qualities of the Pedigreat administration
+* Beneath the Price cards User can find Notes about Pedigreat personnel and trainers, that shows
+   * professional qualities of the Pedigreat administration in selecting personnel
    * care for reputation by providing high safety and security standards for their Clients
 
 ![Notes about personnel](documentation/notes-personnel-bullets.png)
@@ -237,7 +242,7 @@ The Contacts Page contains 2 sections:
 This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
 User is encouraged than to fill out the form
 
-![Registration Form](documentation/registration-page-pedigreat.png)
+![Registration Form](documentation/customer-registration-form.png)
 
 This form features change of font size and color of the input border and label when in focus.
 
@@ -250,6 +255,8 @@ Nothing fancy on this page "to say nothing of the dog" (citation as made famous 
 The page features two twin dogs with a welcoming banner for a User who took time to fill out the form. 
 
 See for yourself [Pedigreat Web-Site - Response Page](https://mykola-ci.github.io/pedigreat/response.html)
+
+![Response page](documentation/response-page-pedigreat.png)
 
 
 ## Features Left to Implement
@@ -287,321 +294,23 @@ The ChatBot will provide instant responses to common queries, enhancing customer
 
 ## Technologies Used
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the structure and content of the site pages.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles to the site elements.
-- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was of frequent use to arrange layouts on the pages.
-- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
-- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
-- [VSCode](https://code.visualstudio.com/) was used as IDE, the main tool to write and edit code.
-- [Git](https://git-scm.com/) was used for the version control of the website.
-- [GitHub](https://github.com/) was used to host the code of the website and for deployment.
-- [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
-
- . The only hover effect for Logo __Pedigreat__ is a cursor-pointer transformation with no other hover effects. The header also takes on-board the navigation menu realized in 2 basic forms: for small and for larger screens above 765px.
-
- The 'hover' effect in the form of animated lighting pattern delivered by means of css shadow effects:
-~~~
-
-  .nav-menu>li {
-    background: #f2cb05;
-    box-shadow: -20px 20px 55px #a98e04,
-      20px -20px 55px #ffff07;
-  }
-
-  .nav-menu>li:hover {
-    background: linear-gradient(315deg, #dab705, #ffd905);
-    box-shadow: -45px -45px 64px #8a7403,
-      45px 45px 64px #ffff07;
-  }
-
-~~~
-
-
-
-Where 2 basic effects were adopted for the site: 
-- drop-down menu transition 1sec ease-in-out
-~~~
-nav {
-  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
-}
-~~~
-- rotation of the burger icon 90º on touch
-~~~
-#nav-toggle:checked~.nav-toggle--label {
-  transform: rotate(90deg)
-}
-~~~
-
-The Banner on the front Page is arranged as a '::before' pseudo-class element in order to gain control over the background image opacity and filters without affecting the properties of the text box elements.   
-
-```
-  .banner-landing::before {
-  content: "";
-  background: url() no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  filter: blur(2px) opacity(100%);
-}
-```
-At the same time the text slogan has the background of its own to provide for the required contrast, its opacity helping retain consistency throughout the major banner 
-
-Both sections as well as the following Testimonials section are made coherent with the small left and right margins. Technically, this is attained by means of width 95% of their parent, max-width 400px (for responsive design at larger widths) and flex-centered layout.  
-
-* each placed in a container with a thin border and smooth shadowing
-* images are placed at the top left with the properties 
-  - float: left and 
-  - width: min(20%, 100px) 
-
-   __Secondary banner and the other pages layout__
-Gallery, Services and Contacts pages have a common layout scheme, which differs from that of the front page. While the front page is dominated by the primary banner and the slogan, the other pages feature:
-* secondary banner that takes up about 25% of the viewport height (25vh) and has a fixed property to remain still when content is scrolling
-
-```width: 100%;  
-  height: 25vh;  
-  position: relative;  
-  z-index: 1;
-  background-image: url();
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(50%) hue-rotate(-20deg);
-  ```
-
-
-* the content block/container that is shifted up by 15vh partly overlapping the secondary banner
-  - the shift is performed by means of transform property ``transform: translateY(-15vh)``
-* the width of the content container is set to 90%  
-
-![Secondary Banner Showcase Gallery Page](documentation/secondary-banner-gallery-showcase.gif)
-![Secondary Banner Showcase Services Page](documentation/secondary-banner-services-showcase.gif)
-
-Features include:
-* Icons inside the price cards - with clip-path feature
-
-~~~
-/* Shape services icons */
-.services--cards--content img {
-  width: clamp(60px, 30%, 80px);
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.clip-path-shadow {
-  filter: drop-shadow(0px 2px 5px var(--COLOR-4));
-  text-align: center;
-}
-~~~
-
-* Standard bullets replaced by Puppy-Dog-face icons for the unordered lists of the Notes section 
-
-~~~
-.ul-special-style {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.ul-special-style li {
-  padding-top: 0.3rem;
-  text-indent: -1rem;
-}
-
-.ul-special-style li::before {
-  content: "🐶 ";
-  padding-left: max(0.8rem, 4vw);
-}
-
-.ul-special-style span {
-  position: relative;
-  left: 0.8rem
-}
-~~~
-The Invitation card features an 'inset shadow' ``box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);``
-
-This form features a focus-within property that results in changing font size and color of the input label.
-
-~~~
-.customer-registration--block>div:focus-within label {
-  color: rgb(51, 51, 160);
-  font-size: 150%;
-}
-~~~
-
-### Summary of Responsive Tools Employed
-
-#### __General Media Queries__
->_@media screen and (min-width: 765px)_
-
-This is the major query that provides for the transition from mobile to tablet devices.  
-Summary of the query as we go from small to larger screens:
-- Toggle of navigation bar from drop-down menu to linear menu form
-- Front page: transformation of About Us section to horizontal 3-column view: photo + 2 text columns
-- Front page: transformation of Service cards layout to 2 rows x 2 columns
-- Front page: transformation of Testimonials to 2 blocks in one row
-- Footer:  toggle of column view for Pedigreat address over social media icons to a one-liner
-- Gallery page: one column to two column photo gallery 
-- Services page: 
-  - Price-cards. Changing flex from column to row view with flex-wrap property set to 'wrap'.\
-The 1-column view changes to '2-column over 2-rows' view from 930px+ screens due to wrap property.
-  - Notes blocks. The 'Pet-care personnel' unordered list changes from 4 list items in 1 column to '2 column over 2 row' view.
-- Contact page: 3 communication lines of contacts with icons set from column to row view.
-- Customer-form page: Fieldset items (checkboxes and radio buttons) change from column to ``flex-wrap: wrap`` layout.     
-
->_@media screen and (min-width: 1020px)_
-
-Summary of the query:
-- Front page: adjust the gap between service cards
-- Front page: change limitation on characters for service cards to stay within 2 column layout.   
-`` max-width: 45ch;``
-- Gallery page: transition from 2 columns to 3 column masonry of photos.  
-``column-count: 3;``
-- Registration-form page: setting the form to 2 column view by adjusting flex properties.
-
->_@media screen and (min-width: 1600px)_
-
-Summary of the query:
-- Services Page: ensure all 4 price cards lays in 1 row for all screens by setting flex-wrap property to nowrap value.
-- Services Page: change 2 blocks of notes, namely Pet_care personnel and Trainers, from column layout to the horizontal, row layout. 
-
-#### __Special Media Queries__
-
->_@media screen and (min-width: 380px) and (max-width: 1020px)_ 
-
-* Registration form.\
-Trigger padding for the input fields to increase as from smaller screens (380px) to the point where the form changes its layout (1020px) from 1 column to 2 columns.   
-
->_@media screen and (min-width: 1380px) and (max-width: 1600px)_
-
-* Services Page.\
-Manages price cards to remain in 2 x 2 layout in (4 cards in 2 rows).
-The parent container is forced to smaller width in order to prevent from flex 'wrap' property to exercise undesirable layout of 3 cards in 1 row and only 1 card in the second row.\
-The effect becomes unnecessary at the point of 1600px when the cards must be laid out all 4 in 1 row.
-
- ~~~
-  .services--cards {
-    max-width: 1000px;
-    gap: 2rem
-  }
-  ~~~
- 
->_@media only screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape)_
-
-* Manages layout of the front page banner and the slogan.\
-The tests on mobiles revealed the problem of text overflow in landscape mode. In addition, the banner was not observable in the screen in its entirety.\
-The reason: responsive text sizes as a function from viewport width.\
-The solution: match and set fixed font-sizes for the specific range of screens and orientation mode.  
-
-#### __Non-media tools__
-
-* _Using Clamp function_
-  - Set for all fonts sizes using the following selectors globally: h2,h3,h4,h5,p,label,legend. 
-  - Set for font-sizes locally for inputs, buttons, links.
-  - Set for the size of social media icons inside the footer.
-  - Applied to width of price cards on service page.
-  - Applied to padding for the Notes items on the service page.
-  - Applied to padding-left for address item inside footer for the screens above 760px.
-
-* _Maximum of 2 values in combination with viewport units_
-  - Applied to the main banner height to grow with screen height and to prevent from overflow in landscape mode. ``height: max(320px, 75vh);`` 
-  - Applied to the left padding of the price cards content to expand with the viewport size.
-
-~~~
-.services-details h2 {
-  padding: 2rem max(0.5rem, 5vw);
-  text-align: center;
-}
-~~~
-
-~~~
-.services--cards--content {
-  max-width: 400px;
-  padding: 1rem max(0.5rem, 2vw);
-}
-~~~
-
-- 
-  - Applied to the padding of Registration Form title.
-
-~~~
-#banner-registration--text {
-  line-height: normal;
-  background-color: #f2e20597;
-  padding: max(0.5rem, 1vw) max(0.5rem, 2vw);
-  position: sticky;
-  top: 75px;
-}
-~~~ 
-
-* _Using Calc function_
-  - Set responsive surrounding padding for the registration form shadowed box.
-
-~~~
-.customer-registration {
-  width: min(100%, 1200px);
-  /* Responsive padding pattern to minimize queries */
-  padding: calc(5 * var(--vw));
-}
-~~~
-
-*
-  - Additional top and bottom padding for the registration form for the screens less 1020px
-
-~~~
-.registration--form {
-  display: flex;
-  flex-direction: column;
-  /* Responsive padding pattern to minimize queries */
-  padding-top: calc(4 * var(--vw));
-  padding-bottom: calc(3 * var(--vw));
-  border: 1px solid var(--COLOR-4);
-  box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);
-}
-~~~
-
-*
-  - Left padding for the checkbox and radio fieldset 
-
-~~~
-.customer-registration--block fieldset {
-  padding: 1rem 1rem 1rem calc(10 * var(--vw));
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-~~~
-
-* 
-  - padding and gap properties for the navigation menu for the screens larger 765px
-
-~~~
-.nav-menu {
-    letter-spacing: normal;
-    flex: 1;
-    padding: 0 calc(4 * var(--vw)) 0 calc(1.5rem + 3 * var(--vw));
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    gap: calc(3 * var(--vw));
-  }
-~~~
-
-*
-  - some other slight re-adjustments of calc arguments for the above mentioned elements and blocks within media queries
-
-
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - coding the structure and content of the site pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - adding and creating styles to the site elements.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - one of the major tools to arrange layouts on the pages.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) - declaring global CSS variables and apply them across the project. 
+- [Balsamiq](https://balsamiq.com/) - was used to make wire-frames for the website.
+- [VSCode](https://code.visualstudio.com/) - IDE for the project, the main workframe to write and edit code.
+- [Git](https://git-scm.com/) -  the version control system and tracking changes of html & css for the Project.
+- [GitHub](https://github.com/) - hosting the code of the website and for deployment.
+- [GIMP](https://www.gimp.org/) - was used to make and resize images for the README file.
+- [Chrome Devtools](https://developer.chrome.com/docs/devtools/) - used as the important tool in layouts control, responsiveness check, testing
+- [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) - a Chrome extension used for testing 
 
 ## Design
 
 ### Color Palette
 
-The colours adopted for the project Pedigreat were inspired by the trending palette as made public by [Adobe Color](https://color.adobe.com/trends) .\
+The colors adopted for the project Pedigreat were inspired by the trending palette as made public by [Adobe Color](https://color.adobe.com/trends) .\
 This palette can be found at [Adobe Trends - Postane palette](https://color.adobe.com/search?q=postane)
 
 ![The Palette Postane as from Adobe](documentation/design/Colors%20Adobe%20Palette%202023-11-06.png)
@@ -631,5 +340,79 @@ The Palette has a unique symbiosis of traditional and somewhat archaic warm tone
 ## Testing
 
 For the testing documentation and descriptions please refer to [TESTING.md](TESTING.md)
+
+## Deployment
+
+### Deployment to GitHub Pages
+
+- This site was deployed to GitHub pages. Follow the steps below to deploy: 
+  - In the [GitHub repository](https://github.com/Mykola-CI/pedigreat), navigate to the Settings tab 
+  - From the source section drop-down menu, select the __Main__ Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link to the Pedigreat site can be found [here](https://mykola-ci.github.io/pedigreat)
+
+### Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone the repository:
+
+- ``git clone https://github.com/Mykola-CI/pedigreat.git``
+
+- Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https://github.com/Mykola-CI/pedigreat), which will start the Gitpod workspace for you.
+
+
+## Credits
+
+### Content
+The content of this site was built as a result of on-line study of:
+* business models in pet-sitting and pet-boarding sector
+* on-line resources of existing businesses
+
+Inspiration for content, design and layouts was taken mostly from the following web-resources:
+* [Paula's Pet-Sitting](https://paulaspetsitting.com) 
+* [Animal Shelter](https://iuliiakonovalova.github.io/animal_shelter)
+* [Capterra UK](https://www.capterra.co.uk) 
+* [DoggyDayCare](https://www.doggydaycare.uk.com)
+* [Rover](https://www.rover.com/uk/)
+* [Mindful Paws](https://mindfulpaws.co.uk/)
+* [Pawshake](https://mindfulpaws.co.uk/)
+ and many more...
+
+Regarding inspiration for Color Palette please go to [Design](#design)  
+
+### Media
+
+The images for the Pedigreat Web-Site were taken from [Unsplash](https://unsplash.com/) and [Deposit Photos](https://depositphotos.com/home.html).\
+The main banner image was taken from [iStock](https://www.istockphoto.com/)
+
+* __Home Page__
+   - [Main Banner](https://www.istockphoto.com/photo/group-of-dog-walkers-working-together-gm1345672917-423673247)
+   - [Collage of Pedigreat Personnel](https://depositphotos.com/photo/collage-photos-happy-attractive-people-white-background-576061626.html)
+   - [Testimonial Hero 1](https://unsplash.com/photos/woman-wearing-brown-and-black-plaid-dress-shirt-smiling-white-taking-picture-2oLBwyl80QY) 
+   - [Testimonial Hero 2](https://unsplash.com/photos/bearded-man-taking-a-selfie-kMJp7620W6U)
+
+* __Gallery__
+  - [Photo 1](https://depositphotos.com/photo/couple-walking-with-dogs-46673591.html)
+  - [Photo 2](https://depositphotos.com/photo/little-boy-playing-dogs-park-222882292.html)
+  - Photo 3 - kindly granted by a friend
+  - [Photo 4](https://unsplash.com/photos/group-of-people-standing-on-green-grass-field-during-daytime-SAwxJ8PHY3Q)
+  - [Photo 5](https://unsplash.com/photos/woman-carrying-black-french-bulldog-qQfYkkzjunc)
+  - [Photo 6](https://unsplash.com/photos/smiling-woman-hugging-puppy-CXQgs12wFHc)
+  - [Photo 7](https://depositphotos.com/photo/two-womans-dogs-rest-park-223675362.html)
+  - [Photo 8](https://unsplash.com/photos/close-up-photography-of-blue-australian-shepherd-puppy-sitting-on-green-grass-TTx6xTXWKHI)
+  - Photo 9 - kindly granted by a friend
+  - [Photo 10](https://unsplash.com/photos/man-sitting-beside-black-dog-tk5LWGNiWVs)
+  - [Photo 11](https://depositphotos.com/photo/dogs-of-different-race-playing-on-a-green-lawn-53094309.html) 
+  - [Photo 12](https://unsplash.com/photos/woman-carrying-dog-while-standing-Y6EIP03u_wY)
+  - [Photo 13](https://unsplash.com/photos/a-woman-sitting-in-the-grass-with-her-dog-91zgFEWBkmc)
+  - [Photo 14](https://unsplash.com/photos/man-in-gray-sweater-sitting-beside-black-and-white-border-collie-1wYswsLHXII)
+  - Photo 15 - kindly granted by a friend
+  - [Photo 16](https://unsplash.com/photos/woman-carrying-long-coated-white-dog-near-green-leafed-plants-HNCX1RT1qRk)
+
+
+
+
+
 
 
