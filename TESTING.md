@@ -130,6 +130,68 @@
 | "What size is your pet" radio buttons | select an option | only one option can be selected and displayed | Yes | optional |
 | "Submit Form" button | click the button | User directed to the response page | Yes | in case one of the required fields was not filled in, the popup appears "Please fill in this field" |
 
+## Validator Testing
+
+* __HTML__
+
+  - __Home Page__
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-2023-11-10.png)
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-index-html-23-11-10.png)
+
+  - __Gallery Page__
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-gallery-html-23-11-10.png)
+
+  - __Services Page__
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-services-html-23-11-10.png)
+
+  - __Contacts Page__
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-contact-html-23-11-10.png)
+
+  - __Registration Form__
+
+![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-customer-form-html-23-11-10.png)
+
+
+* __CSS Validation__
+
+![W3C CSS Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-css-2023-11-10.png)
+
+35 warning regarding the use of :root variables: "Due to their dynamic nature, CSS variables are currently not statically checked".
+
+![CSS Validator warnings](documentation/testing-screnshots/validator-giffs/css-warnings-var-2023-11-10.png)
+
+## Lighthouse Report
+
+* __Home Page__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-home.png)
+
+* __Gallery Page__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-gallery.png)
+
+* __Services Page__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-services.png)
+
+* __Contacts Page__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-contacts.png)
+
+* __Registration Form__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-registration.png)
+
+* __Response Page__
+
+![Lighthouse Report Home page](documentation/testing-screnshots/lighthouse/lighthouse-response.png)
+
+</br>
 
 
 ## Bugs Unfixed
