@@ -195,3 +195,68 @@
 
 
 ## Bugs Unfixed
+
+1. __Backdrop-filter__ property issue.\
+The issue presented itself when working on background styles for the drop-down menu of the Navigation Bar for mobile version. Initial plan was to set a fashionable glassmorphism effect for the background.\
+Whereas no problem was tracked on desktop mobile simulations (like in Chrome DevTools), the  testing on real mobiles revealed that on iOS devices this effect fails entirely.
+
+   One of the references found on-line is [here](https://stackoverflow.com/questions/75606971/how-can-i-make-backdrop-filter-blur-effect-work-on-ios) 
+
+   References in documentation [__mdn web docs__](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter)
+![Mdn backdrop-filter capture](documentation/testing-screnshots/bugs/mdn-docs-backdrop-filter.png)
+
+   _Solution_.\
+   Glassmorphism effect being obviously eyecatching in the first instance did not provide the required level of contrast of foreground text against the blurred background in a particular case of Pedigreat design. Thus, this effect was substituted with simple background color from the adopted [Color Palette](README.md). 
+
+2. __Background-attachment: fixed__ not working on iOS devices.\
+In Pedigreat site layout scheme all secondary pages except the Landing Page (or Home Page) are equipped with the so-called Secondary Banner - wide panoramic photo of red flowers in the meadows.
+
+   The testing on mobiles have found that the effect 'fixed' attachment does not work on iOS devices, both mobiles and tablets. 
+
+   Information for that issue can be found on [Apple Developer Forum](https://developer.apple.com/forums/thread/99883)
+
+   Instead, the background image was blurred and darker, almost illegible due to the rendering properties of iOS.
+
+   _Solution_.\
+   One of the solutions might be to introduce an additional media query.
+
+~~~
+@media only screen and (max-width: 1024px) {
+  .banner-secondary {
+    background-attachment: scroll !important;
+  }
+}
+~~~
+
+However, it raises the dilemma for a designer between consistency throughout all devices and sacrificing this effect for all Android and other non-iOS devices. Since the darkened and blurred background was not bad at all the Author left it as is and will address this issue when working on [Features Left to Implement](README.md).
+
+3. __Transition property__ appeared not animatable.\
+The Author had an idea to implement the transition type of animation to the drop down menu of navigation bar for mobiles. The standard method of the menu to pop up when the burger icon is checked is a toggle between `display: none` and `display: block` properties.\
+It appeared that these properties were not animatable ([geeksforgeeks](https://www.geeksforgeeks.org/why-transition-properties-does-not-work-with-display-properties/) or [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions))   
+
+_Solution_.\
+This may be debatable if this particular case can be referred to as a Bug, because the transition from 'none' to 'block' has no sense as there are no intermediate states. Yet this challenge cannot be fixed, and there might be only a workaround. Here it is as it has been implemented in the Project: 
+
+~~~
+nav {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+#nav-toggle:checked~nav {
+  opacity: 1;
+  max-height: 300px;
+}
+~~~
+
+4. __Option Element__ styling is very limited.\
+
+The Pedigreat project contains CSS declarations for styling option elements. However, during testing the finding was that the styles were partly applied in the Firefox browser, the other browsers rendering their default styles for pop up window of select element.
+
+One of the links observed on that subject can be found on [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
+
+_Solution_.\
+Besides Java options there is a relatively new property in CSS, such as `<selectmenu>`  [CSS Tricks](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option).
+However, it is said that the applications are yet very limited. 

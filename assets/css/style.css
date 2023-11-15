@@ -643,7 +643,7 @@ to control image filters w/o affecting the headings and paragraphs */
   box-shadow: inset 0px 0px 13px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Does not take effect (possible reason: default browser rendering */
+/* Does not take effect in all browsers (possible reason: default browser rendering */
 .customer-registration--block option {
   font-family: serif;
   background-color: var(--COLOR-2);
