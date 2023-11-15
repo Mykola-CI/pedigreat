@@ -3,7 +3,7 @@
 
 ## Contents
 * [Compatibility](#compatibility)
-* [Responsiveness](#compatibility)
+* [Responsiveness](#responsiveness)
 * [Manual Testing](#testing-links-and-action-elements-table-summary)
 * [Validator Testing](#validator-testing)
 * [Lighthouse Report](#lighthouse-report)
