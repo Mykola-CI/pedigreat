@@ -1,4 +1,45 @@
 # Pedigreat
+
+## Contents
+* [Intro](#intro)
+* [User Stories](#user-stories)
+  - [First-time Users](#first-time-users)
+  - [Returning Users](#returning-users)
+  - [Frequent Users](#frequent-users)
+  - [Pet Owners](#as-a-pet-owner-in-general)
+  - [Author's Comments](#comments-on-user-stories)
+* [Existing Features](#existing-features)
+  - [Functionality and navigation](#global-functionality-and-navigation)
+  - [Header and Navigation Bar](#header-and-navigation-bar)
+  - [Home Page](#home-page)
+    - [Landing page](#landing-page-and-primary-banner)
+    - [About Us section](#about-us-and-services-sections-on-the-home-page)
+    - [Testimonials Section](#testimonials-section-on-the-home-page)
+  - [Footer](#footer)
+  - [Gallery Page](#gallery-page)
+  - [Services Page](#services-page)
+  - [Contacts Page](#contacts-page)
+  - [Customer Registration Form](#customer-registration-form)
+  - [Response Page](#response-page)
+* [Features Left To Implement](#features-left-to-implement)
+* [Technologies Used](#technologies-used)
+* [Design](#design)
+  - [Color Palette](#color-palette)
+  - [Typography](#typography)
+* [Testing](#testing)
+* [Deployment](#deployment)
+  - [Deployment to GitHub](#deployment-to-github-pages)
+  - [Local Deployment](#local-deployment)
+* [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+* [Acknowledgements](#acknowledgements)
+
+
+## Intro
+[Back to Contents](#contents)
+
+
 Pedigreat is a fictional brand name, which occurred to me when I was contemplating on the project. Googling this brandname gives no exact matches save one in Nigeria that is related to construction development. 
 
 In this project the Pedigreat is an imaginary small-scale business solution in canine and pet-sitting service sector. It teams up experienced dog-lovers who have turned their passion for dogs into a career.    
@@ -13,6 +54,8 @@ The site can be accessed at the following link  [Pedigreat Web-Site](https://myk
 
 --------
 ## User Stories 
+[Back to Contents](#contents)
+
 ### First-time Users:
 * _As a first-time user_, I want to easily understand the services offered by the pet-sitting website so that I can decide if it meets my needs.
 * _As a first-time user_, I want to see testimonials from other pet owners who have used the pet-sitting service so that I can trust the quality of the service.
@@ -27,6 +70,8 @@ Existing features assume person-to-person contacts and direct messaging.
 _Note_: Rewards, discounts and promotions are exercised at this stage through the newsletter and direct messages once the User fills out the existing Registration Form.\
 For the next development [refer to the Features Left to Implement](#features-left-to-implement) 
 ### As a Pet Owner In General
+[Back to Contents](#contents)
+
 * _As a pet owner_, I want to be able to easily find and book a pet sitter so that my pet is cared for when I am away.
 * _As a pet owner_, I want to be able to read reviews about pet sitters so that I can choose a sitter I trust.
 * _As a pet owner_, I want to be able to communicate with the pet sitter about my pet's needs so they are properly cared for.
@@ -35,12 +80,16 @@ _Note_: All communications with pet-sitters and administration and the related u
 For further development please [refer to the Features Left to Implement](#features-left-to-implement)    
 _________
 ### Comments On User Stories
+[Back to Contents](#contents)
+
 Technically the web-site is supposed to employ html & css tools only at the first stage of its development. The business model is adjusted to provide its functionality without undertaking complex back-end software that would manage the automation of scheduling, booking, billing, chatbot etc. That is why the business model and eventually its web-site assumes, at least for now, person-to-person contacts only when making appointments and booking services.
 
 Yet the registration form will appear on one of the pages because Pedigreat offers promotions and cross-promotions, as well as email newsletters for the registered clients. Many of users' wants can be met in the newsletter communication and a relevant event marketing.
 
 
 ## Existing Features
+[Back to Contents](#contents)
+
 There are 6 pages in total at present:
 1. Home 
 2. Gallery 
@@ -52,6 +101,8 @@ There are 6 pages in total at present:
 Each page is divided onto 3 global sections: Header, Main Content and Footer.
 
 ### Global functionality and navigation
+[Back to Contents](#contents)
+
 The first User's hit will be the Landing page and the Banner. It is equipped with 
 * Header with logo and navigation bar 
 * Main Slogan followed by the button "Book Now" and the Themed Banner at the Background  
@@ -84,6 +135,7 @@ If User opts to fill out the registration form he or she hits the Button and get
 Once the Form is completed User will get to a [Response Page](#response-page).
 
 ### Header and Navigation Bar
+[Back to Contents](#contents)
 
 * The Header takes a fixed position at the top of the screen and available through all 6 pages.  
 * The Header contains a clickable Logo Pedigreat, which leads User to the Home page from every other page.
@@ -114,6 +166,8 @@ Burger icon rotating  on touch:
 * Such organization of the Header and Navigation Bar provides for smooth User's navigation from page to page without undertaking backward sequences. 
 
 ### Home page
+[Back to Contents](#contents)
+
 #### Landing Page and Primary Banner 
 The Banner Section becomes a __Landing page__ for the User being the first visible part of the Home Page. 
 The Banner Section or the Landing Page consist of: 
@@ -132,6 +186,8 @@ User can see that scrolling further down is going to provide more information.
 
 
 #### About Us and Services sections on the Home page
+[Back to Contents](#contents)
+
 * __About Us__ section tells User a few words about the Pedigreat team, its professional knowledge and dedication. The section consists of  
   * 2 text blocks and 
   * the collage of portrait photos of the Pedigreat personnel.
@@ -151,6 +207,8 @@ The About Us section is followed by the brief descriptions of 4 distinct types o
   ![About Us - Mobile view](documentation/mobile-about-us.png) ![Service Descriptions - Mobile view](documentation/mobile-service-intro.png)
 
 #### Testimonials section on the Home page
+[Back to Contents](#contents)
+
 This section is featured with 2 testimonials organized as cards. User will see and get familiar with
 * the photo of a pet-owner, 
 * name,
@@ -162,6 +220,8 @@ This section is featured with 2 testimonials organized as cards. User will see a
   ![Testimonials combined with Service cards - Tablet view](documentation/testimonials-section-tablet.png)
 
 ### Footer
+[Back to Contents](#contents)
+
 The Footer is a global element which is repeated across all the pages in the similar manner as the Header.
 Unlike the Header its position is not fixed, it is pushed down by Main Content of each page.
 
@@ -178,6 +238,8 @@ The social media icons change color on hover:
 ![Hover effect on media icons](documentation/media-icons-hover.gif)
 
 ### Gallery Page
+[Back to Contents](#contents)
+
 User can see
 * that the Pedigreat has a wide array of clients,
 * pet-sitters and pet-owners indulged with their furry friends and beaming with emotions,  
@@ -198,6 +260,7 @@ This feature is applied in order to rectify suspended and unfinished graphics of
 ![Gallery Bottom background pattern](documentation/gallery-bottom-background.png)
 
 ### Services Page
+[Back to Contents](#contents)
 
 The Services page provides useful and practical information for User.
 
@@ -220,6 +283,8 @@ The Services page provides useful and practical information for User.
 
 
 ### Contacts Page
+[Back to Contents](#contents)
+
 This is a go-to-action Page. User will be given details of contact and channels of communication.
 
 ![Contacts](documentation/contact-page-pedigreat.png)
@@ -237,7 +302,7 @@ The Contacts Page contains 2 sections:
 ![Invitation to become privileged customer](documentation/invitation-to-register-card.png)
 
 ### Customer Registration Form
-[Back to Existing Features](#existing-features)
+[Back to Contents](#contents)
 
 This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
 User is encouraged than to fill out the form
@@ -249,7 +314,7 @@ This form features change of font size and color of the input border and label w
 ![Registration Form Focus effect](documentation/registration-form-focus.png)
 
 ### Response Page
-[Back to Existing Features](#existing-features)
+[Back to Contents](#contents)
 
 Nothing fancy on this page "to say nothing of the dog" (citation as made famous by Jerome K. Jerome in his Three Men In a Boat).\
 The page features two twin dogs with a welcoming banner for a User who took time to fill out the form. 
@@ -260,7 +325,7 @@ See for yourself [Pedigreat Web-Site - Response Page](https://mykola-ci.github.i
 
 
 ## Features Left to Implement
-[Back to User Stories](#user-stories)
+[Back to Contents](#contents)
 
 __Customer Portal.__\
 This feature will allow customers 
@@ -293,6 +358,7 @@ __ChatBot and FAQ Page__\
 The ChatBot will provide instant responses to common queries, enhancing customer service efficiency. The FAQ page will host answers to frequently asked questions, serving as a self-help resource for customers.
 
 ## Technologies Used
+[Back to Contents](#contents)
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - coding the structure and content of the site pages.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - adding and creating styles to the site elements.
@@ -307,6 +373,7 @@ The ChatBot will provide instant responses to common queries, enhancing customer
 - [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) - a Chrome extension used for testing 
 
 ## Design
+[Back to Contents](#contents)
 
 ### Color Palette
 
@@ -332,16 +399,19 @@ The Palette has a unique symbiosis of traditional and somewhat archaic warm tone
 | Color 5 | For the Font Color of the entire Body and Input elements |
 
 ### Typography
+[Back to Contents](#contents)
 
 ![Oswald Family](documentation/design/oswald-sample.png)
 
 ![Quattrocento Family](documentation/design/quattrocento-sample.png)
 
 ## Testing
+[Back to Contents](#contents)
 
 For the testing documentation and descriptions please refer to [TESTING.md](TESTING.md)
 
 ## Deployment
+[Back to Contents](#contents)
 
 ### Deployment to GitHub Pages
 
@@ -353,6 +423,7 @@ For the testing documentation and descriptions please refer to [TESTING.md](TEST
 The live link to the Pedigreat site can be found [here](https://mykola-ci.github.io/pedigreat)
 
 ### Local Deployment
+[Back to Contents](#contents)
 
 In order to make a local copy of this project, you can clone it.
 In your IDE Terminal, type the following command to clone the repository:
@@ -363,8 +434,11 @@ In your IDE Terminal, type the following command to clone the repository:
 
 
 ## Credits
+[Back to Contents](#contents)
 
 ### Content
+[Back to Contents](#contents)
+
 The content of this site was built as a result of on-line study of:
 * business models in pet-sitting and pet-boarding sector
 * on-line resources of existing businesses
@@ -382,6 +456,7 @@ Inspiration for content, design and layouts was taken mostly from the following 
 Regarding inspiration for Color Palette please go to [Design](#design)  
 
 ### Media
+[Back to Contents](#contents)
 
 The images for the Pedigreat Web-Site were taken from [Unsplash](https://unsplash.com/) and [Deposit Photos](https://depositphotos.com/home.html).\
 The main banner image was taken from [iStock](https://www.istockphoto.com/)
@@ -414,6 +489,7 @@ The main banner image was taken from [iStock](https://www.istockphoto.com/)
   - [Panorama With Meadow Flowers](https://depositphotos.com/photo/poppy-field-panorama-in-spring-82869122.html)
 
 ## Acknowledgements
+[Back to Contents](#contents)
 
 * [Code Institute](https://codeinstitute.net/): tutors and Slack community members for their support and help.
 * [Iuliia Konovalova](https://github.com/IuliiaKonovalova): the assigned __Mentor__ for being resourceful in many of my  breakthroughs along the project. 

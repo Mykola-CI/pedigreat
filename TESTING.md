@@ -1,6 +1,14 @@
 # Testing
+## Contents
+* [Compatibility](#compatibility)
+* [Responsiveness](#compatibility)
+* [Manual Testing](#testing-links-and-action-elements-table-summary)
+* [Validator Testing](#validator-testing)
+* [Lighthouse Report](#lighthouse-report)
+* [Bugs Unfixed](#bugs-unfixed)
 
 ## Compatibility
+[Back to Contents](#contents)
 
 * The Pedigreat site was checked with Chrome, Safari and Firefox browsers
   - __Chrome__
@@ -22,6 +30,8 @@
   ![Firefox Navigation & Scroll](documentation/testing-screnshots/browsers/firefox-scroll-navigation.gif)
 
 ## Responsiveness
+[Back to Contents](#contents)
+
 * Web-pages were checked with the [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
   - __Home Page__
@@ -96,6 +106,7 @@
 
 
 ## Testing Links and Action Elements (Table Summary)
+[Back to Contents](#contents)
 
 
 | __Feature__ | __Action__ | __Expected result__ | __Tested__ | __Comments__ |
@@ -131,6 +142,7 @@
 | "Submit Form" button | click the button | User directed to the response page | Yes | in case one of the required fields was not filled in, the popup appears "Please fill in this field" |
 
 ## Validator Testing
+[Back to Contents](#contents)
 
 * __HTML__
 
@@ -166,6 +178,7 @@
 ![CSS Validator warnings](documentation/testing-screnshots/validator-giffs/css-warnings-var-2023-11-10.png)
 
 ## Lighthouse Report
+[Back to Contents](#contents)
 
 * __Home Page__
 
@@ -195,6 +208,7 @@
 
 
 ## Bugs Unfixed
+[Back to Contents](#contents)
 
 1. __Backdrop-filter__ property issue.\
 The issue presented itself when working on background styles for the drop-down menu of the Navigation Bar for mobile version. Initial plan was to set a fashionable glassmorphism effect for the background.\
@@ -251,7 +265,7 @@ nav {
 }
 ~~~
 
-4. __Option Element__ styling is very limited.\
+4. __Option Element__ styling is very limited.
 
 The Pedigreat project contains CSS declarations for styling option elements. However, during testing the finding was that the styles were partly applied in the Firefox browser, the other browsers rendering their default styles for pop up window of select element.
 
