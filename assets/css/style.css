@@ -290,6 +290,7 @@ to control image filters w/o affecting the headings and paragraphs */
   max-width: 400px;
   padding: 0.5rem 0.3rem 1.5rem 1rem;
   border: 1px solid var(--COLOR-4);
+  /* Border pattern is generated using MDN CSS demo, refer to README */
   border-radius: 50% 10% / 10% 40%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -438,7 +439,7 @@ to control image filters w/o affecting the headings and paragraphs */
 }
 
 
-/* Shape services icons */
+/* Shape services icons with CSS Portal clip-generator tool, refer to README */
 .services--cards--content img {
   width: clamp(60px, 30%, 80px);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
@@ -811,12 +812,13 @@ footer p {
     padding: 0.9rem 0.5rem 0.5rem 0.5rem;
     width: 120px;
     height: 50px;
+    /* Buttons designed using Neumorphism tool - refer to README */
     border-radius: 16px;
     background: #f2cb05;
     box-shadow: -20px 20px 55px #a98e04,
       20px -20px 55px #ffff07;
   }
-
+/* Buttons designed using Neumorphism tool - refer to README */
   .nav-menu>li:hover {
     background: linear-gradient(315deg, #dab705, #ffd905);
     box-shadow: -45px -45px 64px #8a7403,

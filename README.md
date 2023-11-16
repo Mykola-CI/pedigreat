@@ -442,8 +442,9 @@ In your IDE Terminal, type the following command to clone the repository:
 The content of this site was built as a result of on-line study of:
 * business models in pet-sitting and pet-boarding sector
 * on-line resources of existing businesses
+* on-line resources for CSS tools and tutorials
 
-Inspiration for content, design and layouts was taken mostly from the following web-resources:
+Inspiration for business content, design and layouts was taken mostly from the following web-resources:
 * [Paula's Pet-Sitting](https://paulaspetsitting.com) 
 * [Animal Shelter](https://iuliiakonovalova.github.io/animal_shelter)
 * [Capterra UK](https://www.capterra.co.uk) 
@@ -453,7 +454,11 @@ Inspiration for content, design and layouts was taken mostly from the following 
 * [Pawshake](https://mindfulpaws.co.uk/)
  and many more...
 
-Regarding inspiration for Color Palette please go to [Design](#design)  
+_CSS Styles_
+* Border radius for services section of the Home Page was generated using [MDN Web Docs Border Radius demo](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+* Buttons of the Navigation Bar for larger screens and lighting patterns were inspired and generated using [Neumorphism.io](https://neumorphism.io/#b5dbee)
+* Icons inside the price cards of Services Page were designed using clip-path generator tool of [CSS Portal](https://www.cssportal.com/css-clip-path-generator/)  
+* On inspiration for the Color Palette please go to [Design](#design)  
 
 ### Media
 [Back to Contents](#contents)
