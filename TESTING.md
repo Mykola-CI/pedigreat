@@ -135,12 +135,12 @@
 | __Registration Form page__ | | | | | |
 | "First Name" input | Key in the first name | the name is displayed | Yes | required |
 | "Last Name" input | Key in the last name | the name is displayed | Yes | required |
-| "Mobile Number" input | Key in the number | the number is displayed | Yes | optional  |
+| "Mobile Number" input | Key in the number in the required format with dashes| the number is displayed | Yes | optional, in case of wrong input "please match the format requested" appears   |
 | "E-Mail" input | Key in the e-mail| e-mail is displayed | Yes | required. If '@' is missing the popup appears 'please include @...' |
 | "How did you know about us" drop down | select an option | the option selected and displayed | Yes | optional |
 | "Enter Your Pet Name" input | key in a name | the name is displayed | Yes | required |
 | "What services are you interested in" checkbox | check any number of options | the options checked displayed as tick mark | Yes | optional |
-| "What size is your pet" radio buttons | select an option | only one option can be selected and displayed | Yes | optional |
+| "What size is your pet" radio buttons | select an option | only one option can be selected and displayed | Yes | required |
 | "Submit Form" button | click the button | User directed to the response page | Yes | in case one of the required fields was not filled in, the popup appears "Please fill in this field" |
 
 ## Validator Testing
