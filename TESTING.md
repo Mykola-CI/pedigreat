@@ -135,7 +135,7 @@
 | __Registration Form page__ | | | | | |
 | "First Name" input | Key in the first name | the name is displayed | Yes | required |
 | "Last Name" input | Key in the last name | the name is displayed | Yes | required |
-| "Mobile Number" input | Key in the number in the required format with dashes| the number is displayed | Yes | optional, in case of wrong input "please match the format requested" appears   |
+| "Mobile Number" input | Key in the number in the required format with dashes| the number is displayed | Yes | optional, in case of wrong input a pop up appears "please match the format requested" |
 | "E-Mail" input | Key in the e-mail| e-mail is displayed | Yes | required. If '@' is missing the popup appears 'please include @...' |
 | "How did you know about us" drop down | select an option | the option selected and displayed | Yes | optional |
 | "Enter Your Pet Name" input | key in a name | the name is displayed | Yes | required |
@@ -176,8 +176,8 @@
 ![W3C CSS Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-css-2023-11-10.png)
 
 * 35 warnings received regarding the use of :root variables: "Due to their dynamic nature, CSS variables are currently not statically checked".\
-According to [CSS Validator User Manual](https://jigsaw.w3.org/css-validator/manual.html) "Warnings are different from errors since they do not state a problem regarding the specification. They are here to warn (!) the CSS developer that some points might be dangerous and could lead to a strange behaviour on some user agents."\
-In fact, :root variables were implemented due to their benefits, such as enabling the use of dynamic values and facilitating easier maintenance and scalability of the Pedigreat CSS code. Despite these warnings, the Pedigreat CSS code has been thoroughly tested across multiple browsers and devices to ensure a consistent and optimal user experience, all features working consistently.
+According to [CSS Validator User Manual](https://jigsaw.w3.org/css-validator/manual.html) "Warnings are different from errors since they do not state a problem regarding the specification. They are here to warn (!) the CSS developer that some points might be dangerous and could lead to a strange behavior on some user agents."\
+In fact, :root variables were implemented due to their benefits, such as enabling the use of dynamic values and facilitating easier maintenance and scalability of the Pedigreat CSS code. Despite these warnings, the Pedigreat CSS code has been thoroughly tested across multiple browsers and devices to ensure a consistent and optimal user experience, all features working as intended.
 
 ![CSS Validator warnings](documentation/testing-screnshots/validator-giffs/css-warnings-var-2023-11-10.png)
 
