@@ -177,7 +177,7 @@
 
 * 35 warnings received regarding the use of :root variables: "Due to their dynamic nature, CSS variables are currently not statically checked".\
 According to [CSS Validator User Manual](https://jigsaw.w3.org/css-validator/manual.html) "Warnings are different from errors since they do not state a problem regarding the specification. They are here to warn (!) the CSS developer that some points might be dangerous and could lead to a strange behaviour on some user agents."\
-In fact, :root variables were implemented due to their benefits, such as enabling the use of dynamic values and facilitating easier maintenance and scalability of the Pedigreat CSS code. Despite these warnings, the Pedigreat CSS code has been thoroughly tested across multiple browsers and devices to ensure a consistent and optimal user experience.
+In fact, :root variables were implemented due to their benefits, such as enabling the use of dynamic values and facilitating easier maintenance and scalability of the Pedigreat CSS code. Despite these warnings, the Pedigreat CSS code has been thoroughly tested across multiple browsers and devices to ensure a consistent and optimal user experience, all features working consistently.
 
 ![CSS Validator warnings](documentation/testing-screnshots/validator-giffs/css-warnings-var-2023-11-10.png)
 

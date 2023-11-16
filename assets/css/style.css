@@ -18,7 +18,7 @@
   --COLOR-3: rgba(242, 202, 4, 1);
   --COLOR-4: rgba(101, 100, 89, 1);
   --COLOR-5: rgba(66, 55, 20, 1);
-  /* Setting variable for responsive design */
+  /* Setting variable of measure for responsive design */
   --vw: 1vw;
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 header a {
-  /* Underline removed to all 'a' children of the header*/
+  /* Underline removed to all 'a' children of the header */
   text-decoration: none;
   color: inherit;
 }
@@ -208,7 +208,7 @@ to control image filters w/o affecting the headings and paragraphs */
 
 .banner-landing--text h2 {
   padding: 1rem 1rem;
-  /* Set in ch to prevent from stretching into one line */
+  /* Measure set in ch to prevent from stretching into one line */
   max-width: 20ch;
 }
 
@@ -763,13 +763,12 @@ footer p {
   }
 }
 
-/* IPad-mini => */
+/* IPad-mini and larger */
 
 /* header and nav-bar */
 @media screen and (min-width: 765px) {
 
   header {
-    /* justify-content: space-between; */
     align-items: center;
     min-height: 79px;
     padding: 0 0 0 1rem;
