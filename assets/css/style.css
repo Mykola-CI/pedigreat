@@ -519,6 +519,10 @@ to control image filters w/o affecting the headings and paragraphs */
   margin: 1rem;
 }
 
+.media--card--icon > i {
+  color: #3f4773;
+} 
+
 .customer-form {
   display: flex;
   flex-direction: column;
