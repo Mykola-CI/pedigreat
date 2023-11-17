@@ -47,22 +47,22 @@
                     <div>
                         <label for="first-name">First Name (required):</label>
                         <br>
-                        <input type="text" id="first-name" name="first-name" placeholder="e.g. Joann" required>
+                        <input type="text" id="first-name" name="first-name" placeholder="e.g. John" required>
                         <br>
                     </div>
                     <div>
                         <label for="last-name">Last Name (required):</label>
                         <br>
-                        <input type="text" id="last-name" name="last-name" placeholder="e.g. Buttler" required>
+                        <input type="text" id="last-name" name="last-name" placeholder="e.g. Doe" required>
                         <br>
                     </div>
                     <div>
                         <label for="mobile">Mobile Number:
                             <br>
-                            <small>(in the form xxxx-xxx-xxxx)</small>
+                            <small>(+44 followed by 10 digits)</small>
                         </label>
-                        <input type="tel" id="mobile" name="mobile" placeholder="e.g. 07XX-XXX-XXXX"
-                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+                        <input type="tel" id="mobile" name="mobile" placeholder="e.g. +44XXXXXXXXXX"
+                            pattern="^\+44\d{10}$" title="Please enter a valid UK mobile number starting with +44 followed by 10 digits">
                         <br>
                     </div>
                     <div>
