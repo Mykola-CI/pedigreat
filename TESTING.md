@@ -150,36 +150,38 @@
 
   - __Home Page__
 
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-2023-11-10.png)
-
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-index-html-23-11-10.png)
+![W3C Validator Index Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-index-html-23-11-17.png)
 
   - __Gallery Page__
 
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-gallery-html-23-11-10.png)
+![W3C Validator Gallery Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-gallery-html-23-11-17.png)
 
   - __Services Page__
 
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-services-html-23-11-10.png)
+![W3C Validator Services Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-services-html-23-11-17.png)
 
   - __Contacts Page__
 
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-contact-html-23-11-10.png)
+![W3C Validator Contacts Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-contact-html-23-11-17.png)
 
   - __Registration Form__
 
-![W3C Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-pedigreat-customer-form-html-23-11-10.png)
+![W3C Validator Customer-form Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-customer-form-html-23-11-17.png)
+
+  - __Response Page__
+
+![W3C Validator Response Page](documentation/testing-screnshots/validator-screens/w3c-validation-pedigreat-response-html-23-11-17.png)
 
 
 * __CSS Validation__
 
-![W3C CSS Validator](documentation/testing-screnshots/validator-giffs/w3c-validation-css-2023-11-10.png)
+![W3C CSS Validator](documentation/testing-screnshots/validator-screens/jigsaw-w3c-css-validation-23-11-17.png)
 
-* 35 warnings received regarding the use of :root variables: "Due to their dynamic nature, CSS variables are currently not statically checked".\
+* 34 warnings received regarding the use of :root variables: "Due to their dynamic nature, CSS variables are currently not statically checked".\
 According to [CSS Validator User Manual](https://jigsaw.w3.org/css-validator/manual.html) "Warnings are different from errors since they do not state a problem regarding the specification. They are here to warn (!) the CSS developer that some points might be dangerous and could lead to a strange behavior on some user agents."\
 In fact, :root variables were implemented due to their benefits, such as enabling the use of dynamic values and facilitating easier maintenance and scalability of the Pedigreat CSS code. Despite these warnings, the Pedigreat CSS code has been thoroughly tested across multiple browsers and devices to ensure a consistent and optimal user experience, all features working as intended.
 
-![CSS Validator warnings](documentation/testing-screnshots/validator-giffs/css-warnings-var-2023-11-10.png)
+![CSS Validator warnings](documentation/testing-screnshots/validator-screens/w3c-validation-css-warnings-2023-11-17.png)
 
 ## Lighthouse Report
 [Back to Contents](#contents)
