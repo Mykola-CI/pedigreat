@@ -135,7 +135,7 @@
 | __Registration Form page__ | | | | | |
 | "First Name" input | Key in the first name | the name is displayed | Yes | required |
 | "Last Name" input | Key in the last name | the name is displayed | Yes | required |
-| "Mobile Number" input | Key in the number in the required format with dashes| the number is displayed | Yes | optional, in case of wrong input a pop up appears "please match the format requested" |
+| "Mobile Number" input | Key in the number in the required format | the number is displayed | Yes | optional, in case of wrong input a pop up appears "please match the format requested" and a title "Please enter a valid UK mobile number starting with +44 followed by 10 digits" |
 | "E-Mail" input | Key in the e-mail| e-mail is displayed | Yes | required. If '@' is missing the popup appears 'please include @...' |
 | "How did you know about us" drop down | select an option | the option selected and displayed | Yes | optional |
 | "Enter Your Pet Name" input | key in a name | the name is displayed | Yes | required |
@@ -277,4 +277,4 @@ One of the links observed on that subject can be found on [mdn web docs](https:/
 
 _Solution_.\
 Besides Java options there is a relatively new property in CSS, such as `<selectmenu>`  [CSS Tricks](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option).
-However, it is said that the applications are yet very limited. 
+However, it is said that the applications are so far very limited. 

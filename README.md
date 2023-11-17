@@ -307,15 +307,15 @@ The Contacts Page contains 2 sections:
 This page is accessible if User opts to become a privileged customer and hits the 'Go On Register Now' button on the Contacts page.
 User is encouraged than to fill out the form
 
-![Registration Form](documentation/registration-form.png)
+![Registration Form](documentation/registration-form-page.png)
 
 This form features change of font size, color of the input border and label when in focus.
 
-![Registration Form Focus effect](documentation/registration-focus.png)
+![Registration Form Focus effect](documentation/registration-focus-highlight.png)
 
-User can also see the Mobile Number field, which is not a required input to fill. However, should User opts to grant his/her number User will have to follow the shown pattern, which is usually exercised for mobile UK numbers (begin with 07)
+User can also see the Mobile Number field, which is not a required input to fill. However, should User opts to grant his/her number in order to enhance his/her communication with Pedigreat the User will have to follow the shown pattern, which is exercised for all UK numbers in international E.164 standard format (begin with +44 and followed by 10 digits)
 
-![Mobile Number Input](documentation/registration-mobile-pattern.png)
+![Mobile Number Input](documentation/registration-phone-pattern.png)
 
 ### Response Page
 [Back to Contents](#contents)
